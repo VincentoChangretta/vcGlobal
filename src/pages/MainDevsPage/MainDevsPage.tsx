@@ -1,7 +1,7 @@
 import { appImg, earthImg } from "shared/images";
 import { TextSlider } from "shared/ui/TextSlider";
 
-const x = ["Aram", "Arman"];
+const x = ["Философия", "Arman"];
 
 export const MainDevsPage = () => {
   return (
@@ -10,12 +10,10 @@ export const MainDevsPage = () => {
         <div className="flex items-center justify-between">
           <div className="flex flex-col items-start justify-center minusHeaderHeight">
             <div className="mb-[25px]">
-              <div>
-                <h1 className="flex text-8xl font-extrabold mb-[20px]">
-                  <span className="mr-[20px]">Мы -</span>
-                  <TextSlider textArray={x} speed={500} />
-                </h1>
-              </div>
+              <h1 className="relative w-[550px] flex text-8xl font-extrabold mb-[20px]">
+                <span className="mr-[20px]">Мы -</span>
+                  <TextSlider textArray={x} speed={2500} />
+              </h1>
               <h3 className="text-2xl">Твой партнер и творец цифровых миров</h3>
             </div>
             <p className="max-w-[700px]">

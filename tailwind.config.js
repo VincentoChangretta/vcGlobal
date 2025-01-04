@@ -19,6 +19,9 @@ module.exports = {
       },
       fontFamily: {
         "Montserrat": ["Montserrat", "sans-serif"]
+      },
+      transitionDelay: {
+        "2000": "2000ms"
       }
     },
   },

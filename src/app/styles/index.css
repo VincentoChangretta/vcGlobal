@@ -9,7 +9,7 @@
   }
 
   .container {
-    @apply max-w-[1520px] mx-auto px-[10px];
+    @apply max-w-[1620px] mx-auto px-[10px];
   }
 
   .inner {
