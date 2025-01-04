@@ -1,0 +1,25 @@
+@import "./themes/dark.css";
+@import "./themes/light.css";
+
+.app {
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.button {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.themeButton {
+    background: var(--main-color);
+}
+
+.themeButton .slider{
+    background: var(--bg-color);
+}
+
+.title_box{
+    color: var(--main-color)
+}
+

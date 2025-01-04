@@ -5,7 +5,22 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        mainBg: "#1a1a1a",
+        mainBgInv: "#fefefe",
+        ligthtBall: "rgba(255,255,255,.15)"
+      },
+      padding: {
+        btnPadding: "15px" 
+      },
+      borderRadius: {
+        stdRadius: "30px",
+      },
+      fontFamily: {
+        "Montserrat": ["Montserrat", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }

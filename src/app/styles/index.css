@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@layer components {
+  .app {
+    @apply min-h-[100svh] flex flex-col text-lg font-Montserrat;
+  }
+
+  .container {
+    @apply max-w-[1520px] mx-auto px-[10px];
+  }
+
+  .inner {
+    @apply flex items-center justify-between py-[20px];
+  }
+
+  .button {
+    @apply max-w-[250px] w-full p-btnPadding rounded-stdRadius;
+  }
+  .img {
+    @apply w-full h-full object-cover;
+  }
+  .lightBall {
+    @apply absolute bg-ligthtBall rounded-full blur-[50px];
+  }
+  .minusHeaderHeight {
+    min-height: calc(100svh - 100px);
+  }
+}

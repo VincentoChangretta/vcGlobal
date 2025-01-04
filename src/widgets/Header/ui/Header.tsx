@@ -7,20 +7,22 @@ import {
   HeaderLessonsRoutes,
   NavRoutes,
 } from "../routes/routes";
-import { LogoValues } from "widgets/Logo/types/config";
+import { Button } from "shared/ui/Button";
+import { useTheme } from "app/provider/ThemeProvider";
+import { ThemeButton } from "shared/ui/ThemeButton";
 
 export const Header = () => {
   const location = useLocation();
-  const [currentNav, setCurrentNav] = useState(() => {
-    return location.pathname === NavRoutes.LESSONS
-      ? HeaderLessonsRoutes
-      : HeaderDevsRoutes;
-  });
+  const { theme, toggleTheme } = useTheme();
+  const currentNav = location.pathname === NavRoutes.LESSONS ? HeaderLessonsRoutes : HeaderDevsRoutes;
+  const btnValue = {
+    name:location.pathname === NavRoutes.LESSONS ? "Записаться" : "Заказать сайт",
+  };
   return (
     <header>
       <div className="container">
-        <div className="flex items-center justify-between">
-          <Logo />
+        <div className="inner">
+          <Logo pathname={location.pathname} className="grow basis-0" />
           <ul className="flex gap-[30px]">
             {currentNav.map((item) => (
               <li key={item.path}>
@@ -28,6 +30,10 @@ export const Header = () => {
               </li>
             ))}
           </ul>
+          <div className="flex items-center justify-end gap-[20px] grow basis-0">
+            <Button name={btnValue.name} />
+            <ThemeButton />
+          </div>
         </div>
       </div>
     </header>
