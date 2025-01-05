@@ -5,28 +5,45 @@ import { FC, useEffect, useState } from "react";
 interface TextSliderProps {
   textArray: string[];
   speed: number;
+  className?: string;
 }
 
 export const TextSlider: FC<TextSliderProps> = (props) => {
-  const { textArray, speed } = props;
-
-  const [activeText, setActiveText] = useState(textArray[0]);
-  const [move, setMove] = useState(-115);
+  const { textArray, speed, className } = props;
+  const [move, setMove] = useState<number>(-115);
   const textArrayLength = textArray.length * 115;
 
   useEffect(() => {
-    const sliderInt = setInterval(() => {
-      if (Math.abs(move - 115) <= textArrayLength) {
-        setMove((prev) => prev - 115);
-      } else {
-        setMove(0);
-      }
-    }, speed);
+    let sliderInt: NodeJS.Timeout;
+    const startSlider = () => {
+      sliderInt = setInterval(() => {
+        if (Math.abs(move) < textArrayLength) {
+          setMove((prev) => prev - 115);
+        } else {
+          clearInterval(sliderInt);
+          setMove(0);
+        }
+      }, speed);
+    };
+
+    if (move === 0) {
+      const timer = setTimeout(() => {
+        startSlider();
+      }, 4000);
+
+      return () => {
+        clearTimeout(timer);
+        clearInterval(sliderInt);
+      };
+    } else {
+      startSlider();
+    }
+
     return () => clearInterval(sliderInt);
-  }, [move, textArray, speed]);
+  }, [move, textArrayLength, speed]); // Убедитесь, что textArrayLength добавлен в зависимости
 
   return (
-    <div className="absolute top-0 left-[270px] h-[115px] overflow-hidden">
+    <div className={`${className} overflow-hidden`}>
       <ul
         style={{ translate: `0 ${move}px` }}
         className="transition-all duration-[1000ms] flex flex-col gap-[20px]"
