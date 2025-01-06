@@ -11,6 +11,9 @@ module.exports = {
         mainBgInv: "#fefefe",
         ligthtBall: "rgba(255,255,255,.15)"
       },
+      margin: {
+        "section": "100px"
+      },
       padding: {
         btnPadding: "15px" 
       },
@@ -20,8 +23,22 @@ module.exports = {
       fontFamily: {
         "Montserrat": ["Montserrat", "sans-serif"]
       },
+      fontSize: {
+        "title": "45px",
+        "bigTitle": "55px",
+        "sliderNums": "35px"
+      },
+      lineHeight: {
+        "title": "53px"
+      },
+      animation: {
+        "spinPlanet": "spin 60s linear infinite"
+      },
       transitionDelay: {
         "2000": "2000ms"
+      },
+      scale: {
+        mirror: "-1 1", 
       }
     },
   },

@@ -17,7 +17,9 @@ export const MainDevsTop = () => {
                   className={`absolute bottom-0 left-0 h-[115px]`}
                 />
               </h1>
-              <h3 className="text-2xl">Твой партнер и творец цифровых миров!</h3>
+              <h3 className="text-2xl">
+                Твой партнер и творец цифровых миров!
+              </h3>
             </div>
             {/* <p className="max-w-[700px]">
               Наша команда разрабатывает высококачественные приложения,
@@ -31,7 +33,7 @@ export const MainDevsTop = () => {
               <img className="img" src={appImg} alt="" />
             </div>
             <div className="max-w-[500px] absolute top-[80px] z-[5]">
-              <img className="img" src={earthImg} alt="" />
+              <img className="img animate-spinPlanet" src={earthImg} alt="" />
             </div>
             <div className="lightBall top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]"></div>
           </div>

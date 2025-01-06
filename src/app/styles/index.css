@@ -17,15 +17,33 @@
   }
 
   .button {
-    @apply max-w-[250px] w-full p-btnPadding rounded-stdRadius;
+    @apply flex justify-center items-center max-w-[250px] w-full p-btnPadding rounded-stdRadius;
   }
+
   .img {
     @apply w-full h-full object-cover;
   }
+
   .lightBall {
     @apply absolute bg-ligthtBall rounded-full blur-[50px];
   }
+
+  .bigTitle {
+    @apply text-bigTitle font-extrabold leading-title mb-[50px];
+  }
+  .title {
+    @apply text-title font-extrabold leading-title mb-[50px];
+  }
+
   .minusHeaderHeight {
     min-height: calc(100svh - 100px);
+  }
+
+  .arrow {
+    @apply flex justify-center items-center;
+  }
+
+  .mirroredArrow {
+    scale: -1 1;
   }
 }

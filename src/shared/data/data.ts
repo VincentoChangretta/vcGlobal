@@ -1,3 +1,5 @@
+import { appImg } from "shared/images";
+
 export const MainTextSliderData: string[] = ["Философия", "Современность", "Практичность", "Надежность"];
 export const about = [
   {
@@ -6,6 +8,7 @@ export const about = [
     description: "Turnkey website development",
     text: "We develop sites of any type.From landing to multifunctional information portals.",
     link: "/prices/#sites",
+    img: appImg,
     imgAlt: "Sites",
   },
   {
@@ -14,6 +17,7 @@ export const about = [
     description: "International format",
     text: "Development of applications of any complexity",
     link: "/prices/#apps",
+    img: appImg,
     imgAlt: "Apps",
   },
   {
@@ -22,6 +26,7 @@ export const about = [
     description: "International format",
     text: "Development of web games of any complexity",
     link: "/prices/#games",
+    img: appImg,
     imgAlt: "Games",
   },
 ];
@@ -33,6 +38,7 @@ export const aboutServiceDataRU = [
     description: "Разработка сайтов под ключ",
     text: "Мы разработываем сайты любого типа. От лендинга  до мультифункциональных информационных порталов.",
     link: "/prices/#sites",
+    img: appImg,
     imgAlt: "Сайты",
   },
   {
@@ -41,6 +47,7 @@ export const aboutServiceDataRU = [
     description: "Международный формат",
     text: "Разработка веб приложений любой сложности",
     link: "/prices/#apps",
+    img: appImg,
     imgAlt: "Приложения",
   },
   {
@@ -49,6 +56,7 @@ export const aboutServiceDataRU = [
     description: "Международный формат",
     text: "Разработка веб игр любой сложности",
     link: "/prices/#games",
+    img: appImg,
     imgAlt: "Игры",
   },
 ];
