@@ -26,7 +26,8 @@ module.exports = {
       fontSize: {
         "title": "45px",
         "bigTitle": "55px",
-        "sliderNums": "35px"
+        "sliderNums": "35px",
+        "big": "24px",
       },
       lineHeight: {
         "title": "53px"

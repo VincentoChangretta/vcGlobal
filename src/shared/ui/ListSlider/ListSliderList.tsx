@@ -35,8 +35,7 @@ export const ListSliderList = ({
         <li
           key={item.id}
           onClick={() => handleChangeActive(item)}
-          //   className={activeEl.id == item.id ? "active" : null}
-          className="cursor-pointer"
+          className={`${activeEl.id == item.id ? "opacity-1" : "opacity-[0.2]"} cursor-pointer`}
         >
           0{index + 1}
         </li>
