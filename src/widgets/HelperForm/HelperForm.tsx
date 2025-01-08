@@ -1,20 +1,24 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { handleSubmit } from "shared/lib/FormSubmit/FormSubmit";
+import { Button } from "shared/ui/Button";
+import { HiddenInputs } from "shared/ui/HiddenInputs/HiddenInputs";
+import { Input } from "shared/ui/Input";
 
 export const HelperForm = () => {
-  const formRef = useRef(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const [submitBtn, setSubmitBtn] = useState(false);
-  const { setFetchModal } = useContext(fetchModalContext);
+
   return (
-    <section className="help-to-choise">
-      <div className="container-original">
+    <section className="text-center">
+      <div className="container">
         <div className="help-to-choise__inner">
-          <div className="box">
-            <h2>Мы готовы помочь с выбором!</h2>
-            <p>Наши эксперты подберут самое эффективное решение</p>
+          <div className="">
+            <h2 className="bigTitle">Мы готовы помочь с выбором!</h2>
+            <p className="text-big mb-[20px]">Наши эксперты подберут самое эффективное решение</p>
             <form
               ref={formRef}
               onSubmit={(e) =>
-                handleSubmit(e, formRef.current, setSubmitBtn, setFetchModal)
+                handleSubmit({e, formRef: formRef.current, setSubmitBtn})
               }
               className="help-to-choise__form"
               method="post"
@@ -24,15 +28,13 @@ export const HelperForm = () => {
               <Input
                 name="number"
                 type="number"
-                className="help-to-choise__input"
-                placeholder={
-                  language == "ru" ? "Номер телефона" : "Phone number"
-                }
+                placeholder="Номер телефона"
+                boxClassName="mx-auto mb-[50px] rounded-[50px]"
               >
-                <SubmitBtn submitBtn={submitBtn} />
+                <Button inputButton={true} className="mx-auto" type="submit">Отправить</Button>
               </Input>
             </form>
-            <Privacy />
+            {/* <Privacy /> */}
           </div>
         </div>
       </div>

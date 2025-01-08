@@ -1,3 +1,4 @@
+import { HelperForm } from "widgets/HelperForm/HelperForm";
 import { MainDevsAdvantages } from "./sections/MainDevsAdvantages";
 import { MainDevsServices } from "./sections/MainDevsServices";
 import { MainDevsTop } from "./sections/MainDevsTop";
@@ -8,6 +9,7 @@ const MainDevsPage = () => {
       <MainDevsTop />
       <MainDevsServices />
       <MainDevsAdvantages />
+      <HelperForm/>
     </>
   );
 };

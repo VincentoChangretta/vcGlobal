@@ -3,7 +3,7 @@ import { advatnagesDataRU } from "shared/data/data";
 export const MainDevsAdvantages = () => {
   const data = advatnagesDataRU;
   return (
-    <section>
+    <section className="mb-section">
       <div className="container">
         <h2 className="bigTitle text-center">Наши преимущества</h2>
         <div className="flex justify-between gap-[20px]">

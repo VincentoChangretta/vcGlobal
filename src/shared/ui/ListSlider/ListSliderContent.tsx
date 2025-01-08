@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ListSliderContent.css";
 import { Link } from "react-router-dom";
+import { Button } from "../Button";
 
 export const ListSliderContent = ({ activeEl, animation }) => {
   let activeElClass = ["about-info__card-img"];
@@ -26,8 +27,10 @@ export const ListSliderContent = ({ activeEl, animation }) => {
           — {activeEl.description}
         </h4>
         <p className="mb-[20px]">{activeEl.text}</p>
-        <Link to={activeEl.link} className="button">
-          Подробнее
+        <Link to={activeEl.link}>
+          <Button>
+            Подробнее
+          </Button>
         </Link>
       </div>
     </div>

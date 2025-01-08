@@ -1,14 +1,10 @@
+@import "./global/variables.css";
 @import "./themes/dark.css";
 @import "./themes/light.css";
 
 .app {
     background: var(--bg-color);
     color: var(--main-color);
-}
-
-.button {
-    background: var(--main-color);
-    color: var(--bg-color);
 }
 
 .themeButton {

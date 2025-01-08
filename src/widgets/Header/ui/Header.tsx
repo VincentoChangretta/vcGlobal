@@ -24,7 +24,9 @@ export const Header = () => {
             ))}
           </ul>
           <div className="flex items-center justify-end gap-[20px] grow basis-0">
-            <Button name={btnValue.name} />
+            <Button>
+              Заказать
+            </Button>
             <ThemeButton />
           </div>
         </div>
