@@ -20,6 +20,10 @@
     @apply max-w-[250px] w-full p-btnPadding rounded-stdRadius text-center;
   }
 
+  .linkButton {
+    @apply max-w-[250px] w-full
+  }
+
   .img {
     @apply w-full h-full object-cover;
   }
@@ -47,4 +51,5 @@
   .mirroredArrow {
     scale: -1 1;
   }
+
 }

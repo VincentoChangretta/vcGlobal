@@ -9,7 +9,7 @@ export const HelperForm = () => {
   const [submitBtn, setSubmitBtn] = useState(false);
 
   return (
-    <section className="text-center">
+    <section className="text-center mb-section">
       <div className="container">
         <div className="help-to-choise__inner">
           <div className="">

@@ -2,6 +2,7 @@ import { HelperForm } from "widgets/HelperForm/HelperForm";
 import { MainDevsAdvantages } from "./sections/MainDevsAdvantages";
 import { MainDevsServices } from "./sections/MainDevsServices";
 import { MainDevsTop } from "./sections/MainDevsTop";
+import { MainDevsTeam } from "./sections/MainDevsTeam/MainDevsTeam";
 
 const MainDevsPage = () => {
   return (
@@ -10,6 +11,7 @@ const MainDevsPage = () => {
       <MainDevsServices />
       <MainDevsAdvantages />
       <HelperForm/>
+      <MainDevsTeam/>
     </>
   );
 };

@@ -1,6 +1,9 @@
 import { appImg } from "shared/images";
 
 export const MainTextSliderData: string[] = ["Философия", "Современность", "Практичность", "Надежность"];
+export const Links = {
+  TG: "https://t.me/vincentochangretta"
+}
 export const about = [
   {
     id: "sites",
