@@ -1,3 +1,4 @@
+import { Feedbacks } from "./Feedbacks";
 
 
 export const MainDevsFeedbacks = () => {
@@ -5,7 +6,7 @@ export const MainDevsFeedbacks = () => {
     <section className="mb-section">
       <div className="container">
         <h2 className="bigTitle text-center">Отзывы</h2>
-        <div className="mx-auto max-w-[80%]">
+        <div className="mx-auto max-w-[80%] mb-[50px]">
             <div className="mb-[40px] text-center">
                 <h3 className="text-title mb-[20px]">Никитин Матвей Алексеевич</h3>
                 <h4 className="text-big mb-[20px]">Блогер-просветитель <br /> 
@@ -26,6 +27,7 @@ export const MainDevsFeedbacks = () => {
                 allowFullScreen>
             </iframe>
         </div>
+        <Feedbacks/>
       </div>
     </section>
   );

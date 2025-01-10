@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         mainBg: "#1a1a1a",
         mainBgInv: "#fefefe",
-        ligthtBall: "rgba(255,255,255,.15)"
+        ligthtBall: "rgba(255,255,255,.15)",
+        glassWhite: "rgba(255,255,255,.05)"
       },
       margin: {
         "section": "100px"

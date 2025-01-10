@@ -360,66 +360,15 @@ export const reworkPriceCardsDataRU = [
   },
 ];
 
-export const feedbacksEn = [
-  {
-    id: 1,
-    client_name: "Ivan Petrov",
-    feedback:
-      "The team did an outstanding job developing our website. Their attention to detail and commitment to quality exceeded our expectations. We highly recommend their services to anyone looking for reliable web development!",
-    rating: 5,
-  },
-  {
-    id: 2,
-    client_name: "Anna Smirnova",
-    feedback:
-      "Working with this company was an amazing experience! Their expertise in JavaScript development is top-notch, and they provided valuable insights throughout the process. I couldn't be happier with the final product!",
-    rating: 5,
-  },
-  {
-    id: 3,
-    client_name: "Alexander Sidorov",
-    feedback:
-      "The game they created for us was nothing short of spectacular. Not only was it visually stunning, but also incredibly fun and engaging. Their creativity really shines through in their work!",
-    rating: 5,
-  },
-  {
-    id: 4,
-    client_name: "Ekaterina Ilyina",
-    feedback:
-      "I am impressed with how user-friendly the app they built is. It meets all our requirements and performs flawlessly. The team was also very responsive during development, which made the process smooth.",
-    rating: 4,
-  },
-  {
-    id: 5,
-    client_name: "Dmitry Lebedev",
-    feedback:
-      "Fantastic experience from start to finish! The support team is always there to assist, ensuring that we were never left in the dark. Their dedication to customer service is truly exceptional.",
-    rating: 5,
-  },
-  {
-    id: 6,
-    client_name: "Olga Ivanova",
-    feedback:
-      "The project was handled professionally, and I was really impressed with their ability to listen to our needs and make necessary adjustments. Their attention to detail is commendable.",
-    rating: 4,
-  },
-  {
-    id: 7,
-    client_name: "Timur Kuznetsov",
-    feedback:
-      "They turned our ambitious ideas into a fantastic reality with their incredible JavaScript skills. Their ability to innovate while keeping functionality in mind made a significant difference.",
-    rating: 5,
-  },
-  {
-    id: 8,
-    client_name: "Maria Alekseeva",
-    feedback:
-      "Working with this team was a real pleasure!They paid a lot of time and attention to each aspect of our project, and the results speak for themselves.The application turned out not only beautiful, but also very functional.I will be happy to recommend them to others!",
-    rating: 5,
-  },
-];
 
-export const feedbacksRu = [
+interface feedbacksTypes{
+  id: number,
+  client_name: string,
+  feedback: string,
+  rating: number
+}
+
+export const feedbacks: feedbacksTypes[] = [
   {
     id: 1,
     client_name: "Иван Петров",

@@ -4,6 +4,7 @@ import "./styles/reset.css";
 import "./styles/app.css";
 import { useTheme } from "./provider/ThemeProvider";
 import { AppRouter } from "./router/ui/AppRouter";
+import { Footer } from "widgets/Footer/Footer";
 
 function App() {
   const { theme } = useTheme();
@@ -13,6 +14,7 @@ function App() {
       <main className="grow">
         <AppRouter />
       </main>
+      <Footer/>
     </div>
   );
 }
