@@ -100,40 +100,13 @@ export const advatnagesDataRU = [
   },
 ];
 
-export const howWeWorkData = [
-  {
-    id: "Marketing",
-    title: "Marketing analysis",
-    text: "We analyze the target audience, your niche and competitors.Based on this, a template is selected and a TK is compiled for the preparation of content.",
-  },
-  {
-    id: "Preparation",
-    title: "Preparation of effective content",
-    text: "We will develop an effective offfer, work out headlines and texts, USP, work out the objections and present your product or service in a profitable light.",
-  },
-  {
-    id: "Layount",
-    title: "Preparation of the layout",
-    text: "We will prepare a unique design based on your wishes or select a suitable template design by adapting it to the tasks of your business.",
-  },
-  {
-    id: "HTML",
-    title: "Template developing",
-    text: "We transfer the agreed design to the HTML code.",
-  },
-  {
-    id: "Programming",
-    title: "Programming",
-    text: "Complex projects often require non -trivial software solutions.Filters, abandoned baskets, unloading to Yandex.Market, mailing, working with external applications, connecting third -party libraries, registration through social networks, calculators, multi -ledings and much more.",
-  },
-  {
-    id: "Testing",
-    title: "Testing",
-    text: "The speed, roller layout, the correct display on different devices, failure tolerance at loads and other elements are checked.",
-  },
-];
+interface howWeWorkDataTypes {
+  id: string,
+  title: string,
+  text: string,
+}
 
-export const howWeWorkDataRU = [
+export const howWeWorkData: howWeWorkDataTypes[] = [
   {
     id: "Marketing",
     title: "Маркетинговый анализ",
