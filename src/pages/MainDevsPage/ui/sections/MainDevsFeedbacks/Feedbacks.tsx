@@ -9,7 +9,7 @@ export const Feedbacks = () => {
     <div>
         <div className="grid grid-cols-2 gap-[27px] mb-[30px]">
             {feedbacks.slice(0, visibleCount).map(feedback => (
-                <article className='p-[20px] rounded-stdRadius bg-glassWhite transition-all cursor-pointer' key={feedback.id}>
+                <article className='p-[20px] rounded-stdRadius bg-glassWhite transition-all cursor-pointer hover:bg-glassWhiteHover' key={feedback.id}>
                     <h3 className="text-2xl mb-[20px]">{feedback.client_name}</h3>
                     <p>{feedback.feedback}</p>
                 </article>

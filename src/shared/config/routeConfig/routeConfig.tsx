@@ -1,10 +1,11 @@
 import { LessonsPage } from "pages/LessonsPage";
 import { MainDevsPage } from "pages/MainDevsPage";
+import { PricePage } from "pages/PricePage";
 import { RouteProps } from "react-router-dom";
 
 export enum AppRoutes {
   MAIN = "main",
-  // PRICES = "prices",
+  PRICES = "prices",
   // FEEDBACKS = "feedbacks",
   // CONTACTS = "contacts",
   LESSONS = "lessons",
@@ -15,7 +16,7 @@ export enum AppRoutes {
 
 export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: "/",
-  // [AppRoutes.PRICES]: "/prices",
+  [AppRoutes.PRICES]: "/prices",
   // [AppRoutes.FEEDBACKS]: "/feedbacks",
   // [AppRoutes.CONTACTS]: "/",
   [AppRoutes.LESSONS]: "/lessons",
@@ -29,5 +30,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.LESSONS]: {
     path: RoutePath.lessons,
     element: <LessonsPage />,
+  },
+  [AppRoutes.PRICES]: {
+    path: RoutePath.prices,
+    element: <PricePage />,
   },
 };

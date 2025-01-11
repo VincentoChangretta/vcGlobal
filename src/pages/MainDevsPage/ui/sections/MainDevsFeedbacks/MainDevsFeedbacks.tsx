@@ -14,10 +14,11 @@ export const MainDevsFeedbacks = () => {
                     <a className="link ml-[10px]" href="https://t.me/starpear1724" target="blank"> 
                         4я книга науки логики
                     </a>
-                </h4>
+                </h4> 
                 <p className="text-big">Отзыв на сайт <a className="link" href="www.starpear.ru">www.starpear.ru</a></p>
             </div>
             <iframe 
+            className="rounded-stdRadius"
                 width="100%" 
                 height="720" 
                 src="https://www.youtube.com/embed/k-H6gnLXJHM?rel=0&si=4uHadabtxhhHhvUK" 
