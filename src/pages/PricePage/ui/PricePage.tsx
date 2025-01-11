@@ -1,4 +1,4 @@
-import { PricesTop } from "./sections/PricesTop";
+import { PricesTop } from "./sections/PricesTop/PricesTop";
 
 const PricePage = () => {
   return (
