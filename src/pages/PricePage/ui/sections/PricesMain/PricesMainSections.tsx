@@ -14,7 +14,7 @@ export const PricesMainSections: FC<PricesMainSectionsProps> = ({
     return (
         <section className='mb-[50px]'>
             <h3 className='title text-center'>{title}</h3>
-            <div className='flex flex-col gap-[50px] max-w-[1000px] mx-auto'>
+            <div className='flex flex-col gap-[50px] mx-auto'>
                 {data.map((service) => (
                     <PriceMainArticle key={service.id} service={service} />
                 ))}

@@ -1,7 +1,14 @@
-export const PriceMainArticle = ({ service }) => {
+import { FC } from 'react';
+import { ServicePriceTypes } from 'shared/data/data';
+import { Button } from 'shared/ui/Button';
+interface PriceMainArticleProps {
+    service: ServicePriceTypes;
+}
+
+export const PriceMainArticle: FC<PriceMainArticleProps> = ({ service }) => {
     return (
-        <article className='max-w-[1000px] py-[20px] px-[40px] rounded-stdRadius bg-glassWhite'>
-            <div className='flex justify-between items-end'>
+        <article className='py-[20px] px-[40px] rounded-stdRadius bg-glassWhite'>
+            <div className='flex justify-between items-end mb-[20px]'>
                 <div>
                     <h4 className='text-sliderNums font-extrabold leading-sliderNums mb-[30px]'>
                         {service.title}
@@ -14,6 +21,19 @@ export const PriceMainArticle = ({ service }) => {
                     </p>
                     <p className='whitespace-nowrap'>{service.time}</p>
                 </div>
+            </div>
+            <div className='flex justify-between items-end'>
+                <ul className='flex items-center gap-[20px]'>
+                    {service.checks.map((item, index) => (
+                        <li
+                            className='py-[10px] px-[20px] bg-glassWhite rounded-stdRadius'
+                            key={index}
+                        >
+                            {item}
+                        </li>
+                    ))}
+                </ul>
+                <Button>Заказать</Button>
             </div>
         </article>
     );
