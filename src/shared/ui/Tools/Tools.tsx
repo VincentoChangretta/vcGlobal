@@ -3,7 +3,6 @@ import { toolsData } from './ToolsData';
 import classes from './Tools.module.css';
 
 export const Tools = () => {
-
     const [activeEl, setActiveEL] = useState(toolsData[0]);
 
     useEffect(() => {
@@ -18,7 +17,7 @@ export const Tools = () => {
 
     return (
         <div className={classes.tools}>
-            {toolsData.map(item => {
+            {toolsData.map((item) => {
                 const isActive = activeEl.id === item.id;
                 return (
                     <div
@@ -31,4 +30,4 @@ export const Tools = () => {
             })}
         </div>
     );
-}
+};

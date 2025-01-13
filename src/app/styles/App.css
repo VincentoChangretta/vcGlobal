@@ -1,6 +1,6 @@
-@import "./global/variables.css";
-@import "./themes/dark.css";
-@import "./themes/light.css";
+@import './global/variables.css';
+@import './themes/dark.css';
+@import './themes/light.css';
 
 .app {
     background: var(--bg-color);
@@ -11,11 +11,10 @@
     background: var(--main-color);
 }
 
-.themeButton .slider{
+.themeButton .slider {
     background: var(--bg-color);
 }
 
-.title_box{
-    color: var(--main-color)
+.title_box {
+    color: var(--main-color);
 }
-

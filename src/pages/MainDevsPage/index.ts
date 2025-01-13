@@ -1,3 +1,3 @@
-import { MainDevsPageAsync } from "./ui/MainDevsPageAsync"
+import { MainDevsPageAsync } from './ui/MainDevsPageAsync';
 
-export {MainDevsPageAsync as MainDevsPage}
+export { MainDevsPageAsync as MainDevsPage };

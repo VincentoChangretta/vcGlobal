@@ -1,59 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer components {
-  .app {
-    @apply min-h-[100svh] flex flex-col text-lg font-Montserrat;
-  }
+    .app {
+        @apply min-h-[100svh] flex flex-col text-lg font-Montserrat;
+    }
 
-  .container {
-    @apply max-w-[1620px] mx-auto px-[10px];
-  }
+    .container {
+        @apply max-w-[1620px] mx-auto px-[10px];
+    }
 
-  .inner {
-    @apply flex items-center justify-between py-[20px];
-  }
+    .inner {
+        @apply flex items-center justify-between py-[20px];
+    }
 
-  .button {
-    @apply max-w-[250px] w-full p-btnPadding rounded-stdRadius text-center;
-  }
+    .button {
+        @apply max-w-[250px] w-full p-btnPadding rounded-stdRadius text-center;
+    }
 
-  .linkButton {
-    @apply max-w-[250px] w-full
-  }
+    .linkButton {
+        @apply max-w-[250px] w-full;
+    }
 
-  .img {
-    @apply w-full h-full object-cover;
-  }
+    .img {
+        @apply w-full h-full object-cover;
+    }
 
-  .lightBall {
-    @apply absolute bg-ligthtBall rounded-full blur-[50px];
-  }
+    .lightBall {
+        @apply absolute bg-ligthtBall rounded-full blur-[50px];
+    }
 
-  .bigTitle {
-    @apply text-bigTitle font-extrabold leading-title mb-[50px];
-  }
+    .bigTitle {
+        @apply text-bigTitle font-extrabold leading-bigTitle mb-[50px];
+    }
 
-  .title {
-    @apply text-title font-extrabold leading-title mb-[50px];
-  }
+    .title {
+        @apply text-title font-extrabold leading-title mb-[50px];
+    }
 
-  .minusHeaderHeight {
-    min-height: calc(100svh - 100px);
-  }
+    .minusHeaderHeight {
+        min-height: calc(100svh - 100px);
+    }
 
-  .arrow {
-    @apply flex justify-center items-center;
-  }
+    .arrow {
+        @apply flex justify-center items-center;
+    }
 
-  .mirroredArrow {
-    scale: -1 1;
-  }
+    .mirroredArrow {
+        scale: -1 1;
+    }
 
-  .link{
-    @apply underline
-  }
-
+    .link {
+        @apply underline;
+    }
 }

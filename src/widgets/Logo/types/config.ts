@@ -1,4 +1,4 @@
 export enum LogoValues {
-    VCDEVS = "vcDevs",
-    VCLESSONS = "vcLessons"
+    VCDEVS = 'vcDevs',
+    VCLESSONS = 'vcLessons',
 }

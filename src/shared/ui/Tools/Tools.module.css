@@ -8,12 +8,13 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .tools__img.active {
     transform: translateY(-30px) rotate(7deg);
-    filter: drop-shadow(2px 2px 30px rgba(255, 255, 255, 0.25)) brightness(180%) drop-shadow(0px 0px 2px #fff);
+    filter: drop-shadow(2px 2px 30px rgba(255, 255, 255, 0.25)) brightness(180%)
+        drop-shadow(0px 0px 2px #fff);
 }
 
 .tools__img img {
@@ -42,7 +43,6 @@
     right: 150px;
 }
 
-
 .react {
     left: 5px;
     bottom: 40px;
@@ -53,9 +53,8 @@
     bottom: -50px;
 }
 
-
-@media(max-width: 800px){
-    .tools{
+@media (max-width: 800px) {
+    .tools {
         margin-top: 40px;
         translate: 0 0;
         width: 300px;
@@ -63,41 +62,41 @@
     }
     .tools__img.active {
         transform: translateY(-10px) rotate(5deg);
-        filter: drop-shadow(2px 2px 30px rgba(255, 255, 255, 0.25)) brightness(180%) drop-shadow(0px 0px 2px #fff);
+        filter: drop-shadow(2px 2px 30px rgba(255, 255, 255, 0.25))
+            brightness(180%) drop-shadow(0px 0px 2px #fff);
     }
     .tools__img {
         position: absolute;
         width: 90px;
         height: 90px;
-        transition: .5s;
+        transition: 0.5s;
     }
     .html {
         top: -50px;
         left: 50px;
     }
-    
+
     .css {
         top: -10px;
         right: 5px;
     }
-    
+
     .sass {
         left: 90px;
         bottom: -65px;
     }
-    
+
     .js {
         top: 50%;
         left: 50%;
         translate: -50% -50%;
     }
-    
-    
+
     .react {
         left: -5px;
         bottom: 20px;
     }
-    
+
     .php {
         right: 5px;
         bottom: -10px;

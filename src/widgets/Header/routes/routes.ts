@@ -1,30 +1,30 @@
 export enum NavRoutes {
-    MAIN = "/",
-    PRICES = "/prices",
-    FEEDBACKS = "/feedbacks",
-    CONTACTS = "/contacts",
-    LESSONS = "/lessons",
-    LESSONS_LEARN = "/learn",
-    LESSONS_PROGRAMM = "/programm",
-    LESSONS_CONTACTS = "/lessons_contacts",
+    MAIN = '/',
+    PRICES = '/prices',
+    FEEDBACKS = '/feedbacks',
+    CONTACTS = '/contacts',
+    LESSONS = '/lessons',
+    LESSONS_LEARN = '/learn',
+    LESSONS_PROGRAMM = '/programm',
+    LESSONS_CONTACTS = '/lessons_contacts',
 }
 
 export interface HeaderRoutes {
-    name: string,
-    path: string,
+    name: string;
+    path: string;
 }
 
 export const HeaderDevsRoutes: HeaderRoutes[] = [
-    {name: "Главная", path: NavRoutes.MAIN},
-    {name: "Цены", path: NavRoutes.PRICES},
-    {name: "Отзывы", path: NavRoutes.FEEDBACKS},
-    {name: "Курсы", path: NavRoutes.LESSONS},
-    {name: "Контакты", path: NavRoutes.CONTACTS},
-]
+    { name: 'Главная', path: NavRoutes.MAIN },
+    { name: 'Цены', path: NavRoutes.PRICES },
+    { name: 'Отзывы', path: NavRoutes.FEEDBACKS },
+    { name: 'Курсы', path: NavRoutes.LESSONS },
+    { name: 'Контакты', path: NavRoutes.CONTACTS },
+];
 
 export const HeaderLessonsRoutes: HeaderRoutes[] = [
-    {name: "Главная", path: NavRoutes.MAIN},
-    {name: "Чему мы научимся?", path: NavRoutes.LESSONS_LEARN},
-    {name: "Программа", path: NavRoutes.LESSONS_PROGRAMM},
-    {name: "Контакты", path: NavRoutes.LESSONS_CONTACTS},
-]
+    { name: 'Главная', path: NavRoutes.MAIN },
+    { name: 'Чему мы научимся?', path: NavRoutes.LESSONS_LEARN },
+    { name: 'Программа', path: NavRoutes.LESSONS_PROGRAMM },
+    { name: 'Контакты', path: NavRoutes.LESSONS_CONTACTS },
+];
