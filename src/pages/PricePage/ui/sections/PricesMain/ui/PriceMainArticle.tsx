@@ -1,3 +1,4 @@
+import { useModal } from 'app/provider/ModalProvider';
 import { FC } from 'react';
 import { ServicePriceTypes } from 'shared/data/data';
 import { Button } from 'shared/ui/Button';
@@ -6,6 +7,8 @@ interface PriceMainArticleProps {
 }
 
 export const PriceMainArticle: FC<PriceMainArticleProps> = ({ service }) => {
+    const { isOpen, openModal, closeModal } = useModal();
+
     return (
         <article className='py-[20px] px-[40px] rounded-stdRadius bg-glassWhite'>
             <div className='flex justify-between items-end mb-[20px]'>
@@ -33,7 +36,7 @@ export const PriceMainArticle: FC<PriceMainArticleProps> = ({ service }) => {
                         </li>
                     ))}
                 </ul>
-                <Button>Заказать</Button>
+                <Button onClick={openModal}>Заказать</Button>
             </div>
         </article>
     );

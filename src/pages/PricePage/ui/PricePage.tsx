@@ -7,7 +7,7 @@ const PricePage = () => {
         <>
             <PricesTop />
             <PricesMain />
-            <MainDevsTools/>
+            <MainDevsTools />
         </>
     );
 };

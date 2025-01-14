@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { ServicePriceTypes } from 'shared/data/data';
 import { PriceMainArticle } from './PriceMainArticle';
 
-interface PricesMainSectionsProps {
+export interface PricesMainSectionsProps {
     data: ServicePriceTypes[];
     title: string;
 }
