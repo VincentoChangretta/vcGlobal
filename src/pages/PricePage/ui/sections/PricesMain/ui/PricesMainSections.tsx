@@ -1,6 +1,7 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { ServicePriceTypes } from 'shared/data/data';
 import { PriceMainArticle } from './PriceMainArticle';
+import { Modal, useModal } from 'app/provider/ModalProvider';
 
 export interface PricesMainSectionsProps {
     data: ServicePriceTypes[];
@@ -11,6 +12,8 @@ export const PricesMainSections: FC<PricesMainSectionsProps> = ({
     data,
     title,
 }) => {
+
+
     return (
         <section className='mb-[50px]'>
             <h3 className='title text-center'>{title}</h3>
@@ -18,6 +21,7 @@ export const PricesMainSections: FC<PricesMainSectionsProps> = ({
                 {data.map((service) => (
                     <PriceMainArticle key={service.id} service={service} />
                 ))}
+
             </div>
         </section>
     );
