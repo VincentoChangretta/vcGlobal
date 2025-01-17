@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { handleSubmit } from 'shared/lib/FormSubmit/FormSubmit';
 import { Button } from 'shared/ui/Button';
 import { HiddenInputs } from 'shared/ui/HiddenInputs/HiddenInputs';
@@ -37,12 +37,14 @@ export const HelperForm = () => {
                                 name='number'
                                 type='number'
                                 placeholder='Номер телефона'
-                                boxClassName='mx-auto mb-[50px] rounded-[50px]'
+                                boxClassName='mx-auto mb-[50px] rounded-[70px]'
+                                inpClassName='text-xl'
                             >
                                 <Button
                                     inputButton={true}
                                     className='mx-auto'
                                     type='submit'
+                                    black={true}
                                 >
                                     Отправить
                                 </Button>

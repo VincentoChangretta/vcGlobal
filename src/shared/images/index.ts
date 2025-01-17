@@ -3,6 +3,7 @@ import earthImg from './img/earth.webp';
 import AramTeam from './img/Aram2.webp';
 import AlisaTeam from './img/Alisa.webp';
 import VitoTeam from './img/Vito.webp';
+import WhatWeDoImg from './img/wwd.png';
 import reactLogo from './icons/react.svg';
 import reduxLogo from './icons/redux.svg';
 import tailwindLogo from './icons/tailwind.svg';
@@ -19,6 +20,7 @@ export {
     AramTeam,
     AlisaTeam,
     VitoTeam,
+    WhatWeDoImg,
     reactLogo,
     reduxLogo,
     tailwindLogo,

@@ -22,7 +22,7 @@ export const ListSliderContent = ({ activeEl, animation }) => {
                 <img src={activeEl.img} alt={activeEl.imgAlt} />
             </div>
             <div className='max-w-[600px]'>
-                <h3 className='title'>{activeEl.title}</h3>
+                <h3 className='title text-left'>{activeEl.title}</h3>
                 <h4 className='text-[30px] font-bold mb-[20px]'>
                     — {activeEl.description}
                 </h4>

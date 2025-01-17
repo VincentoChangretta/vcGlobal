@@ -10,6 +10,10 @@ module.exports = {
                 ligthtBall: 'rgba(255,255,255,.15)',
                 glassWhite: 'rgba(255,255,255,.05)',
                 glassWhiteHover: 'rgba(255,255,255,.15)',
+                htmlColor: '#F2672E',
+                cssColor: '#4264EB',
+                jsColor: '#F2BF26',
+                gitColor: '#1a1a1a',
             },
             margin: {
                 section: '100px',
@@ -24,6 +28,8 @@ module.exports = {
                 Montserrat: ['Montserrat', 'sans-serif'],
             },
             fontSize: {
+                m: "20px",
+        l: "24px",
                 title: '45px',
                 bigTitle: '55px',
                 sliderNums: '35px',
@@ -36,6 +42,11 @@ module.exports = {
             },
             animation: {
                 spinPlanet: 'spin 60s linear infinite',
+                whatWeDo: 'animWhatWeDo 30s ease infinite',
+                bounceOne: 'pulse 2.5s -.3s linear infinite',
+                bounceTwo: 'pulse 2.5s -.6s linear infinite',
+                bounceThree: 'pulse 2.5s -.9s linear infinite',
+                bounceFor: 'pulse 2.5s -1.2s linear infinite',
             },
             transitionDelay: {
                 2000: '2000ms',

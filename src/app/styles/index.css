@@ -37,7 +37,11 @@
     }
 
     .title {
-        @apply text-title font-extrabold leading-title mb-[50px];
+        @apply text-title font-extrabold leading-title text-center mb-[50px];
+    }
+
+    .smallTitle {
+        @apply text-l font-extrabold
     }
 
     .minusHeaderHeight {
@@ -58,5 +62,59 @@
 
     .closeButton {
         @apply absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-full bg-mainBg text-mainBgInv font-extrabold
+    }
+
+    .htmlIcon {
+        @apply relative text-htmlColor;
+    }
+
+    .htmlIcon::after {
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-htmlColor;
+    }
+
+    .cssIcon {
+        @apply relative text-cssColor;
+    }
+
+    .cssIcon::after {
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-cssColor;
+    }
+
+    .jsIcon {
+        @apply relative text-jsColor;
+    }
+
+    .jsIcon::after {
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-jsColor;
+    }
+
+    .gitIconLight {
+        @apply relative text-mainBgInv;
+    }
+
+    .gitIconLight::after {
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-mainBgInv;
+    }
+
+    .bluredBall {
+        @apply absolute rounded-full blur-[100px];
+    }
+}
+
+@keyframes animWhatWeDo {
+    45% {
+        translate: 0 -90%;
+    }
+
+    50% {
+        translate: 0 -90%;
+    }
+
+    95% {
+        translate: 0 0;
+    }
+
+    100% {
+        translate: 0 0;
     }
 }

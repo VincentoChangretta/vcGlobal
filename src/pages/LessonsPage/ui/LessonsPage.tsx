@@ -1,5 +1,13 @@
+import { LessonsPageTop } from './sections/LessonsPageTop';
+import { LessonsPageWWD } from './sections/LessonsPageWWD';
+
 const LessonsPage = () => {
-    return <div>Lessons</div>;
+    return (
+        <>
+            <LessonsPageTop />
+            <LessonsPageWWD/>
+        </>
+    );
 };
 
 export default LessonsPage;

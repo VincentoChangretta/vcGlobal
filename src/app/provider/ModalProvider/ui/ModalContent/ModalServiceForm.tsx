@@ -10,14 +10,12 @@ export const ModalServiceForm = () => {
                     type='text'
                     placeholder='Ваше имя'
                     boxClassName='max-w-[400px]'
-                    black={true}
                 />
                 <Input
                     name='contact-with-me'
                     type='text'
                     placeholder='Контакт'
                     boxClassName='max-w-[400px]'
-                    black={true}
                 />
             </div>
             <Button black={true}>Заказать</Button>
