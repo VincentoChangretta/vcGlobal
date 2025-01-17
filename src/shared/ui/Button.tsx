@@ -5,28 +5,21 @@ import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode;
     className?: string;
+    black?: boolean;
     inputButton?: boolean;
 }
 
 export const Button: FC<ButtonProps> = (props) => {
     const { theme } = useTheme();
-    const { children, className, inputButton, ...otherProps } = props;
+    const { children, className, black, inputButton, ...otherProps } = props;
 
     const setColor = () => {
-        if (inputButton) {
-            return theme === Themes.LIGHT
-                ? 'bg-mainBgInv text-mainBg'
-                : 'bg-mainBg text-mainBgInv';
-        } else {
-            return theme === Themes.LIGHT
-                ? 'bg-mainBg text-mainBgInv'
-                : 'bg-mainBgInv text-mainBg';
-        }
+        return 'bg-mainBg text-mainBgInv';
     };
 
     return (
         <button
-            className={`button ${setColor()} ${className ? className : ''}`}
+            className={`button ${black ? 'bg-mainBg text-mainBgInv' : 'bg-mainBgInv text-mainBg'} ${className ? className : ''}`}
             {...otherProps}
         >
             {children}

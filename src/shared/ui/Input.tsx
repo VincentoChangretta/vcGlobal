@@ -6,6 +6,7 @@ interface InputProps {
     children?: ReactNode;
     type: string;
     name: string;
+    black?: boolean;
     boxClassName?: string;
     inpClassName?: string;
     placeholder?: string;
@@ -16,6 +17,7 @@ export const Input: FC<InputProps> = ({
     type,
     boxClassName,
     inpClassName,
+    black,
     placeholder,
     name,
 }) => {
@@ -23,8 +25,8 @@ export const Input: FC<InputProps> = ({
 
     return (
         <div
-            className={`flex gap-[30px] max-w-[550px] rounded-stdRadius p-[10px] pl-[30px]
-            ${theme === Themes.LIGHT ? 'bg-mainBg text-mainBgInv' : 'bg-mainBgInv text-mainBg'}
+            className={`flex gap-[30px] max-w-[550px] rounded-stdRadius p-[15px] pl-[30px]
+            ${black ? 'bg-mainBgInvC text-mainBg ' : 'bg-mainBgInv text-mainBgInv'}
             ${boxClassName ? boxClassName : ''}
         `}
         >
