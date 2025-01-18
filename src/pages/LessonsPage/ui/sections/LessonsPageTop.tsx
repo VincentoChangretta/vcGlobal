@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const LessonsPageTop = () => {
     return (
-        <section className='relative mb-[70px]'>
-            <div className='container'>
+        <section className='relative  minusHeaderHeight'>
+            <div className='lessons-container'>
                 <div className='pt-[120px]'>
                     <div className='mb-[60px]'>
                         <div className='relative z-10 text-center mb-[30px]'>

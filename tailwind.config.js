@@ -10,10 +10,11 @@ module.exports = {
                 ligthtBall: 'rgba(255,255,255,.15)',
                 glassWhite: 'rgba(255,255,255,.05)',
                 glassWhiteHover: 'rgba(255,255,255,.15)',
+                bluredBall: 'rgba(255,255,255,.5)',
                 htmlColor: '#F2672E',
                 cssColor: '#4264EB',
                 jsColor: '#F2BF26',
-                gitColor: '#1a1a1a',
+                gitColor: '#0e0e0e',
             },
             margin: {
                 section: '100px',
@@ -28,8 +29,8 @@ module.exports = {
                 Montserrat: ['Montserrat', 'sans-serif'],
             },
             fontSize: {
-                m: "20px",
-        l: "24px",
+                m: '20px',
+                l: '24px',
                 title: '45px',
                 bigTitle: '55px',
                 sliderNums: '35px',

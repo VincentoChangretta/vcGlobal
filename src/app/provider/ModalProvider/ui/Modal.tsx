@@ -1,16 +1,14 @@
-import { FC, ReactNode, useEffect, useRef, useState } from 'react';
+import { FC, ReactNode, useEffect, useRef } from 'react';
 import { ServicePriceTypes } from 'shared/data/data';
 import { ModalService } from './ModalContent/ModalService';
 
 export enum modalDataEnum {
     serviceObj = 'service',
 }
-
-interface allModalDataTypes {
-    type: String;
+export interface allModalDataTypes {
+    type: string;
 }
-
-type modalDataTypes = ServicePriceTypes | allModalDataTypes;
+export type modalDataTypes = ServicePriceTypes | allModalDataTypes;
 
 interface modalProps {
     isOpen: boolean;
@@ -26,7 +24,6 @@ export const Modal: FC<modalProps> = ({
     children,
 }) => {
     const modalRef = useRef<HTMLDivElement>(null);
-
     useEffect(() => {
         const closeModal = (e: MouseEvent) => {
             if (modalRef && !modalRef.current.contains(e.target as Node)) {

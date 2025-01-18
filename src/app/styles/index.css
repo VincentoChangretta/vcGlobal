@@ -12,6 +12,10 @@
         @apply max-w-[1620px] mx-auto px-[10px];
     }
 
+    .lessons-container {
+        @apply max-w-[1320px] mx-auto px-[10px];
+    }
+
     .inner {
         @apply flex items-center justify-between py-[20px];
     }
@@ -99,15 +103,24 @@
     .bluredBall {
         @apply absolute rounded-full blur-[100px];
     }
+
+    .dot {
+        @apply absolute top-[5px] left-[-40px] w-[18px] h-[18px] rounded-full border-2 border-mainBgInv;
+    }
+
+    .dotLine {
+        @apply content-[""] absolute top-[22px] left-[-32px] w-[2px] bg-mainBgInv;
+    }
+
 }
 
 @keyframes animWhatWeDo {
     45% {
-        translate: 0 -90%;
+        translate: 0 -87%;
     }
 
     50% {
-        translate: 0 -90%;
+        translate: 0 -87%;
     }
 
     95% {
