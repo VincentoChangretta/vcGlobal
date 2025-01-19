@@ -1,5 +1,3 @@
-import { useTheme } from 'app/provider/ThemeProvider';
-import { Themes } from 'app/provider/ThemeProvider/lib/ThemeContext';
 import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -10,12 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-    const { theme } = useTheme();
     const { children, className, black, inputButton, ...otherProps } = props;
-
-    const setColor = () => {
-        return 'bg-mainBg text-mainBgInv';
-    };
 
     return (
         <button

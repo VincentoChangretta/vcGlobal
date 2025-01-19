@@ -1,7 +1,6 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import { ServicePriceTypes } from 'shared/data/data';
 import { PriceMainArticle } from './PriceMainArticle';
-import { Modal, useModal } from 'app/provider/ModalProvider';
 
 export interface PricesMainSectionsProps {
     data: ServicePriceTypes[];

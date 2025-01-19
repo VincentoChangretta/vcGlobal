@@ -21,7 +21,7 @@
     }
 
     .button {
-        @apply max-w-[250px] w-full p-btnPadding rounded-stdRadius text-center;
+        @apply max-w-[250px] flex justify-center items-center w-full p-btnPadding rounded-stdRadius text-center;
     }
 
     .linkButton {
@@ -73,7 +73,7 @@
     }
 
     .htmlIcon::after {
-        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-htmlColor;
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[120px] h-[120px] blur-[80px] bg-htmlColor;
     }
 
     .cssIcon {
@@ -81,7 +81,7 @@
     }
 
     .cssIcon::after {
-        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-cssColor;
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[120px] h-[120px] blur-[80px] bg-cssColor;
     }
 
     .jsIcon {
@@ -89,7 +89,7 @@
     }
 
     .jsIcon::after {
-        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-jsColor;
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[120px] h-[120px] blur-[80px] bg-jsColor;
     }
 
     .gitIconLight {
@@ -97,7 +97,7 @@
     }
 
     .gitIconLight::after {
-        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[150px] h-[150px] blur-[80px] bg-mainBgInv;
+        @apply content-[""] absolute z-[0] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[120px] h-[120px] blur-[80px] bg-mainBgInv;
     }
 
     .bluredBall {
