@@ -68,6 +68,10 @@
         @apply absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-full bg-mainBg text-mainBgInv font-extrabold
     }
 
+    .techIconBox {
+        @apply flex justify-center items-center
+    }
+
     .htmlIcon {
         @apply relative text-htmlColor;
     }

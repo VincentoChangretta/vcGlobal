@@ -38,7 +38,7 @@ export const Header = () => {
                     </ul>
                     <div className='flex items-center justify-end gap-[20px] grow basis-0'>
                         <Button>Заказать</Button>
-                        <ThemeButton />
+                        {/* <ThemeButton /> */}
                     </div>
                 </div>
             </div>

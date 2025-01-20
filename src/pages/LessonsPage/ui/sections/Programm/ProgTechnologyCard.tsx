@@ -6,22 +6,10 @@ interface CardProps {
 }
 
 export const ProgTechnologyCard: FC<CardProps> = ({ technology }) => {
-    const setTechColor = () => {
-        if (technology.name === 'HTML') {
-            return 'bg-htmlColor';
-        } else if (technology.name === 'CSS') {
-            return 'bg-cssColor';
-        } else if (technology.name === 'JavaScript') {
-            return 'bg-jsColor';
-        } else if (technology.name === 'Git') {
-            return 'bg-gitColor';
-        }
-    };
-
     return (
         <article className='mb-[20px] text-xl'>
             <h4
-                className={`title mb-[40px] px-[25px] py-[5px] w-fit mx-auto rounded-stdRadius ${setTechColor()}`}
+                className={`title mb-[40px] px-[35px] py-[5px] w-fit mx-auto rounded-stdRadius bg-mainBgInv text-mainBg`}
             >
                 {technology.name}
             </h4>

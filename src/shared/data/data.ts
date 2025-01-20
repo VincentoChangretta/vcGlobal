@@ -1,4 +1,4 @@
-import { modalDataEnum } from 'app/provider/ModalProvider/ui/Modal';
+import { modalDataVariations } from 'shared/constants/constants';
 import { appImg } from 'shared/images';
 
 export const MainTextSliderData: string[] = [
@@ -175,7 +175,7 @@ export interface ServicePriceTypes {
 
 export const websitesPriceCardsData: ServicePriceTypes[] = [
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'site-1',
         title: 'Сайт на готовом шаблоне OpenCart, WordPress, Joomla',
         text: 'Посетите сайты и корпоративные сайты на бесплатных CMS:',
@@ -188,7 +188,7 @@ export const websitesPriceCardsData: ServicePriceTypes[] = [
         ],
     },
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'site-2',
         title: 'Сайт с индивидуальным дизайном',
         text: 'Посетите сайты и корпоративные сайты:',
@@ -201,7 +201,7 @@ export const websitesPriceCardsData: ServicePriceTypes[] = [
         ],
     },
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'site-3',
         title: 'Интернет-магазин / Платформа',
         text: 'Разработка удобных сайтов, доступные цены, бесплатные CMS:',
@@ -217,7 +217,7 @@ export const websitesPriceCardsData: ServicePriceTypes[] = [
 
 export const appsPriceCardsData: ServicePriceTypes[] = [
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'app-1',
         title: 'Небольшое приложение с широкой функциональностью',
         text: 'Для различных целей',
@@ -226,7 +226,7 @@ export const appsPriceCardsData: ServicePriceTypes[] = [
         checks: ['До 10 страниц', 'Адаптивная верстка'],
     },
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'app-2',
         title: 'Среднее приложение с Backend',
         text: 'Для различных целей',
@@ -239,7 +239,7 @@ export const appsPriceCardsData: ServicePriceTypes[] = [
         ],
     },
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'app-3',
         title: 'Онлайн платформа / Большое приложение',
         text: 'Для различных целей',
@@ -255,7 +255,7 @@ export const appsPriceCardsData: ServicePriceTypes[] = [
 
 export const gamesPriceCardsData: ServicePriceTypes[] = [
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'games-1',
         title: 'Разработка интерактивных игр на JavaScript',
         text: 'Быстрая и интерактивная игра',
@@ -271,7 +271,7 @@ export const gamesPriceCardsData: ServicePriceTypes[] = [
 
 export const reworkPriceCardsData: ServicePriceTypes[] = [
     {
-        type: modalDataEnum.serviceObj,
+        type: modalDataVariations.SERVICE.type,
         id: 'rework-1',
         title: 'Переработка / почасовая работа',
         text: 'Коррекции, улучшения',
