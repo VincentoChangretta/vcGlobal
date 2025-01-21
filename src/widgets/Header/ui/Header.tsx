@@ -30,11 +30,20 @@ export const Header = () => {
                         className='grow basis-0'
                     />
                     <ul className='flex gap-[30px]'>
-                        {currentNav.map((item) => (
-                            <li key={item.path}>
-                                <Link to={item.path}>{item.name}</Link>
-                            </li>
-                        ))}
+                        {currentNav.map((item) => {
+                            if (item.path.includes('#')) {
+                                return (
+                                    <li key={item.path}>
+                                        <a href={item.path}>{item.name}</a>
+                                    </li>
+                                );
+                            }
+                            return (
+                                <li key={item.path}>
+                                    <Link to={item.path}>{item.name}</Link>
+                                </li>
+                            );
+                        })}
                     </ul>
                     <div className='flex items-center justify-end gap-[20px] grow basis-0'>
                         <Button>Заказать</Button>

@@ -4,9 +4,9 @@ export enum NavRoutes {
     FEEDBACKS = '/feedbacks',
     CONTACTS = '/contacts',
     LESSONS = '/lessons',
-    LESSONS_LEARN = '/learn',
-    LESSONS_PROGRAMM = '/programm',
-    LESSONS_CONTACTS = '/lessons_contacts',
+    LESSONS_LEARN = '/lessons#learn',
+    LESSONS_PROGRAMM = '/lessons#programm',
+    LESSONS_CONTACTS = '/lessons#contacts',
 }
 
 export interface HeaderRoutes {
@@ -24,7 +24,7 @@ export const HeaderDevsRoutes: HeaderRoutes[] = [
 
 export const HeaderLessonsRoutes: HeaderRoutes[] = [
     { name: 'Главная', path: NavRoutes.MAIN },
-    { name: 'Чему мы научимся?', path: NavRoutes.LESSONS_LEARN },
+    { name: 'Чему мы научимся?', path: `${NavRoutes.LESSONS_LEARN}` },
     { name: 'Программа', path: NavRoutes.LESSONS_PROGRAMM },
     { name: 'Контакты', path: NavRoutes.LESSONS_CONTACTS },
 ];

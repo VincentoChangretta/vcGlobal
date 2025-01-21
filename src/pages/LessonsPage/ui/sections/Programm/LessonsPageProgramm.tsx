@@ -14,7 +14,7 @@ export const LessonsPageProgramm = () => {
     };
 
     return (
-        <section>
+        <section className='mb-section' id='programm'>
             <div className='lessons-container'>
                 <h2 className='title'>Программа занятий</h2>
                 <LessonsProgramm />

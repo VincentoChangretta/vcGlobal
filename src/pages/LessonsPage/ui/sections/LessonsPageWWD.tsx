@@ -1,9 +1,8 @@
 import { whatWeDoData } from 'shared/data/lessonsData';
-import { WhatWeDoImg } from 'shared/images';
 
 export const LessonsPageWWD = () => {
     return (
-        <section className='mb-section'>
+        <section className='mb-section' id='learn'>
             <div className='lessons-container'>
                 <div className='mb-[80px]'>
                     <h2 className='title text-center'>Чему мы научимся?</h2>

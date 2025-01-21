@@ -1,7 +1,7 @@
 import { FC, ReactNode, useEffect, useRef } from 'react';
 import { ServicePriceTypes } from 'shared/data/data';
 import { ModalService } from './ModalContent/ModalService';
-import { LessonsForm } from 'pages/LessonsPage/ui/sections/Programm/LessonsForm';
+import { LessonsForm } from 'pages/LessonsPage/ui/sections/Form/LessonsForm';
 import { modalDataVariations } from 'shared/constants/constants';
 
 export interface allModalDataTypes {
