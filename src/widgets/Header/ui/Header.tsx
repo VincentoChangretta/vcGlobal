@@ -31,10 +31,15 @@ export const Header = () => {
                     />
                     <ul className='flex gap-[30px]'>
                         {currentNav.map((item) => {
+                            const path = window.location.pathname;
                             if (item.path.includes('#')) {
                                 return (
                                     <li key={item.path}>
-                                        <a href={item.path}>{item.name}</a>
+                                        <a
+                                            href={`${path}${item.path.replace('/', '')}`}
+                                        >
+                                            {item.name}
+                                        </a>
                                     </li>
                                 );
                             }
