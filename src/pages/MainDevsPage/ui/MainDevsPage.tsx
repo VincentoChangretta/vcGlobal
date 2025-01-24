@@ -7,8 +7,12 @@ import { MainDevsAboutWork } from './sections/MainDevsAboutWork';
 import { MainDevsTools } from './sections/MainDevsTools';
 import { MainDevsFeedbacks } from './sections/MainDevsFeedbacks/MainDevsFeedbacks';
 import { LessonsContact } from 'pages/LessonsPage/ui/sections/LessonsContacts';
+import { useScrollToTop } from 'shared/lib/ScrollToTop/useScrollToTop';
+import { useScrollToId } from 'shared/lib/ScrollToId/useScrollToId';
 
 const MainDevsPage = () => {
+    useScrollToTop();
+    useScrollToId();
     return (
         <>
             <MainDevsTop />

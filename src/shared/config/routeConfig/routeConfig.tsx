@@ -1,17 +1,14 @@
 import { LessonsPage } from 'pages/LessonsPage';
 import { MainDevsPage } from 'pages/MainDevsPage';
+import { MyCVPage } from 'pages/MyCVPage';
 import { PricePage } from 'pages/PricePage';
 import { RouteProps } from 'react-router-dom';
 
 export enum AppRoutes {
     MAIN = 'main',
     PRICES = 'prices',
-    // FEEDBACKS = "feedbacks",
-    // CONTACTS = "contacts",
     LESSONS = 'lessons',
-    // LESSONS_LEARN = "learn",
-    // LESSONS_PROGRAMM = "programm",
-    // LESSONS_CONTACTS = "lessons_contacts",
+    MyCV = 'CV',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -20,6 +17,7 @@ export const RoutePath: Record<AppRoutes, string> = {
     // [AppRoutes.FEEDBACKS]: "/feedbacks",
     // [AppRoutes.CONTACTS]: "/",
     [AppRoutes.LESSONS]: '/lessons',
+    [AppRoutes.MyCV]: '/myCV',
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -34,5 +32,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.PRICES]: {
         path: RoutePath.prices,
         element: <PricePage />,
+    },
+    [AppRoutes.MyCV]: {
+        path: RoutePath.CV,
+        element: <MyCVPage />,
     },
 };
