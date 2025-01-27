@@ -10,35 +10,6 @@ export const MainTextSliderData: string[] = [
 export const Links = {
     TG: 'https://t.me/vincentochangretta',
 };
-export const about = [
-    {
-        id: 'sites',
-        title: 'Development of sites of any complexity',
-        description: 'Turnkey website development',
-        text: 'We develop sites of any type.From landing to multifunctional information portals.',
-        link: '/prices/#sites',
-        img: appImg,
-        imgAlt: 'Sites',
-    },
-    {
-        id: 'apps',
-        title: 'Development of web applications',
-        description: 'International format',
-        text: 'Development of applications of any complexity',
-        link: '/prices/#apps',
-        img: appImg,
-        imgAlt: 'Apps',
-    },
-    {
-        id: 'games',
-        title: 'Development of web games in programming languages',
-        description: 'International format',
-        text: 'Development of web games of any complexity',
-        link: '/prices/#games',
-        img: appImg,
-        imgAlt: 'Games',
-    },
-];
 
 export const aboutServiceDataRU = [
     {
@@ -46,7 +17,7 @@ export const aboutServiceDataRU = [
         title: 'Разработка сайтов любой сложности',
         description: 'Разработка сайтов под ключ',
         text: 'Мы разработываем сайты любого типа. От лендинга  до мультифункциональных информационных порталов.',
-        link: '/prices/#sites',
+        link: '/prices#site',
         img: appImg,
         imgAlt: 'Сайты',
     },
@@ -55,7 +26,7 @@ export const aboutServiceDataRU = [
         title: 'Разработка веб приложений',
         description: 'Международный формат',
         text: 'Разработка веб приложений любой сложности',
-        link: '/prices/#apps',
+        link: '/prices#app',
         img: appImg,
         imgAlt: 'Приложения',
     },
@@ -64,27 +35,9 @@ export const aboutServiceDataRU = [
         title: 'Разработка веб игр на языках программирований',
         description: 'Международный формат',
         text: 'Разработка веб игр любой сложности',
-        link: '/prices/#games',
+        link: '/prices#game',
         img: appImg,
         imgAlt: 'Игры',
-    },
-];
-
-export const advatnagesData = [
-    {
-        id: 1,
-        title: 'Site for any purpose',
-        text: 'We carry out the development and creation of all types of sites - from a "business card" to a powerful multifunctional portal.Our experts will advise you and help you make a choice. ',
-    },
-    {
-        id: 2,
-        title: 'Individual solutions',
-        text: 'Depending on the subject of business and your requirements, to the basic configuration of the site, we will offer a set of additional modules that will bring amenities for users.',
-    },
-    {
-        id: 3,
-        title: 'Support for the site',
-        text: 'We will ensure regular updating and maintenance of your site, including error correction, updating content and improving functionality so that your resource always remains relevant and safe.',
     },
 ];
 
@@ -256,7 +209,7 @@ export const appsPriceCardsData: ServicePriceTypes[] = [
 export const gamesPriceCardsData: ServicePriceTypes[] = [
     {
         type: modalDataVariations.SERVICE.type,
-        id: 'games-1',
+        id: 'game-1',
         title: 'Разработка интерактивных игр на JavaScript',
         text: 'Быстрая и интерактивная игра',
         price: '400 $',

@@ -6,29 +6,26 @@ import {
 } from 'shared/data/data';
 import { PricesMainSections } from './ui/PricesMainSections';
 
-
-
 const PricePageData = [
     {
-        data: appsPriceCardsData,
+        data: websitesPriceCardsData,
         title: 'Сайты',
     },
     {
-        data: gamesPriceCardsData,
+        data: appsPriceCardsData,
         title: 'Приложения',
     },
     {
-        data: reworkPriceCardsData,
+        data: gamesPriceCardsData,
         title: 'Игры',
     },
     {
-        data: websitesPriceCardsData,
+        data: reworkPriceCardsData,
         title: 'Доработка',
     },
 ];
 
 export const PricesMain = () => {
-    
     return (
         <section className='mb-section'>
             <div className='container'>
@@ -39,7 +36,6 @@ export const PricesMain = () => {
                         data={item.data}
                     />
                 ))}
-                
             </div>
         </section>
     );

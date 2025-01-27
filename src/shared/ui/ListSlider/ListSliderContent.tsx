@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './ListSliderContent.css';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
