@@ -20,20 +20,21 @@ export const Feedbacks = () => {
                     </article>
                 ))}
             </div>
-            <div style={{ textAlign: 'center' }}>
-                {visibleCount == feedbacks.length ? (
-                    <Button className='btn' onClick={() => setVisibleCount(4)}>
-                        Скрыть
-                    </Button>
-                ) : (
-                    <Button
-                        className='btn'
-                        onClick={() => setVisibleCount((prev) => prev + 4)}
-                    >
-                        Еще
-                    </Button>
-                )}
-            </div>
+            {visibleCount == feedbacks.length ? (
+                <Button
+                    className='btn mx-auto'
+                    onClick={() => setVisibleCount(4)}
+                >
+                    Скрыть
+                </Button>
+            ) : (
+                <Button
+                    className='btn mx-auto'
+                    onClick={() => setVisibleCount((prev) => prev + 4)}
+                >
+                    Еще
+                </Button>
+            )}
         </div>
     );
 };

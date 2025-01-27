@@ -6,8 +6,12 @@ import { MainDevsTeam } from './sections/MainDevsTeam/MainDevsTeam';
 import { MainDevsAboutWork } from './sections/MainDevsAboutWork';
 import { MainDevsTools } from './sections/MainDevsTools';
 import { MainDevsFeedbacks } from './sections/MainDevsFeedbacks/MainDevsFeedbacks';
+import { useScrollToTop } from 'shared/lib/ScrollToTop/useScrollToTop';
+import { LessonsContact } from 'pages/LessonsPage/ui/sections/LessonsContacts';
 
 const MainDevsPage = () => {
+    useScrollToTop();
+
     return (
         <>
             <MainDevsTop />
@@ -18,6 +22,7 @@ const MainDevsPage = () => {
             <MainDevsAboutWork />
             <MainDevsTools />
             <MainDevsFeedbacks />
+            <LessonsContact/>
         </>
     );
 };

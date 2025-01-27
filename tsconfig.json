@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+        "outDir": "./dist",  // Указываем, куда компилировать файлы
+        "rootDir": "./src",  // Указываем корень исходных файлов
         "target": "ESNext",
         "module": "ESNext",
         "moduleResolution": "node",

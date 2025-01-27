@@ -2,7 +2,7 @@ import { Feedbacks } from './Feedbacks';
 
 export const MainDevsFeedbacks = () => {
     return (
-        <section className='mb-section'>
+        <section className='mb-section' id='feedbacks'>
             <div className='container'>
                 <h2 className='bigTitle text-center'>Отзывы</h2>
                 <div className='mx-auto max-w-[80%] mb-[50px]'>
