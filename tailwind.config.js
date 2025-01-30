@@ -15,6 +15,7 @@ module.exports = {
                 cssColor: '#4264EB',
                 jsColor: '#F2BF26',
                 gitColor: '#0e0e0e',
+                orangeMain: '#F07427',
             },
             margin: {
                 section: '100px',
@@ -48,6 +49,7 @@ module.exports = {
                 bounceTwo: 'pulse 2.5s -.6s linear infinite',
                 bounceThree: 'pulse 2.5s -.9s linear infinite',
                 bounceFor: 'pulse 2.5s -1.2s linear infinite',
+                animSmallMove: 'animSmallMove 5.5s ease infinite',
             },
             transitionDelay: {
                 2000: '2000ms',

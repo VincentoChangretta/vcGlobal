@@ -1,5 +1,5 @@
 import { MainTextSliderData } from 'shared/data/data';
-import { appImg, earthImg } from 'shared/images';
+import { appImg, earthImg, philosopher } from 'shared/images';
 import { TextSlider } from 'shared/ui/TextSlider';
 
 export const MainDevsTop = () => {
@@ -21,25 +21,14 @@ export const MainDevsTop = () => {
                                 Твой партнер и творец цифровых миров!
                             </h3>
                         </div>
-                        {/* <p className="max-w-[700px]">
-              Наша команда разрабатывает высококачественные приложения,
-              способствующие росту бизнеса, и предлагает образовательные
-              программы, которые помогают молодым специалистам развивать навыки,
-              необходимые для достижения успеха в индустрии.
-            </p> */}
                     </div>
-                    <div className='relative h-[500px] w-[500px]'>
-                        <div className='max-w-[500px] absolute top-[-80px] left-[-120px] z-10'>
-                            <img className='img' src={appImg} alt='' />
-                        </div>
-                        <div className='max-w-[500px] absolute top-[80px] z-[5]'>
-                            <img
-                                className='img animate-spinPlanet'
-                                src={earthImg}
-                                alt=''
-                            />
-                        </div>
-                        <div className='lightBall top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]'></div>
+                    <div className='absolute top-[80px] right-[150px] max-w-[750px]'>
+                        <img
+                            className='relative z-[1000] img animate-animSmallMove '
+                            src={philosopher}
+                            alt=''
+                        />
+                        <span className='lightBall top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[350px] h-[350px] bg-orangeMain animate-pulse'></span>
                     </div>
                 </div>
             </div>

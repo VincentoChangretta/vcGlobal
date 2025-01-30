@@ -18,7 +18,6 @@ export const HeaderDevsRoutes: HeaderRoutes[] = [
     { name: 'Главная', path: NavRoutes.MAIN },
     { name: 'Курсы', path: NavRoutes.LESSONS },
     { name: 'Цены', path: NavRoutes.PRICES },
-    { name: 'Курсы', path: NavRoutes.LESSONS },
     { name: 'Отзывы', path: NavRoutes.FEEDBACKS },
     { name: 'Контакты', path: NavRoutes.CONTACTS },
 ];

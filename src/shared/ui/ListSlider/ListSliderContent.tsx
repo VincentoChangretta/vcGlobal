@@ -14,11 +14,11 @@ export const ListSliderContent = ({ activeEl, animation }) => {
 
     return (
         <div
-            className='relative flex items-center justify-center gap-[150px] transition-all'
+            className='relative flex items-center justify-center gap-[100px] transition-all'
             style={animation}
         >
-            <div className={activeElClass.join(' ')}>
-                <img src={activeEl.img} alt={activeEl.imgAlt} />
+            <div className={`${activeElClass.join(' ')} w-[580px] h-[670px]`}>
+                <img className='img' src={activeEl.img} alt={activeEl.imgAlt} />
             </div>
             <div className='max-w-[600px]'>
                 <h3 className='title text-left'>{activeEl.title}</h3>

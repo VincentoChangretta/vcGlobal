@@ -1,5 +1,5 @@
 import { modalDataVariations } from 'shared/constants/constants';
-import { appImg } from 'shared/images';
+import { appImg, crystallImg, gameImg } from 'shared/images';
 
 export const MainTextSliderData: string[] = [
     'Философия',
@@ -18,7 +18,7 @@ export const aboutServiceDataRU = [
         description: 'Разработка сайтов под ключ',
         text: 'Мы разработываем сайты любого типа. От лендинга  до мультифункциональных информационных порталов.',
         link: '/prices#site',
-        img: appImg,
+        img: crystallImg,
         imgAlt: 'Сайты',
     },
     {
@@ -36,7 +36,7 @@ export const aboutServiceDataRU = [
         description: 'Международный формат',
         text: 'Разработка веб игр любой сложности',
         link: '/prices#game',
-        img: appImg,
+        img: gameImg,
         imgAlt: 'Игры',
     },
 ];

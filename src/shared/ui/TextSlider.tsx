@@ -48,7 +48,11 @@ export const TextSlider: FC<TextSliderProps> = (props) => {
                 style={{ translate: `0 ${move}px` }}
                 className='transition-all duration-[1000ms] flex flex-col gap-[20px]'
             >
-                <li>vcDevs</li>
+                <li
+                    className='text-orangeMain'
+                >
+                    vcDevs
+                </li>
                 {textArray.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}
