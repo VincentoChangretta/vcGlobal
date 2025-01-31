@@ -6,9 +6,9 @@ export const OrderButtons = () => {
     return (
         <div className='flex justify-center items-center gap-[30px]'>
             <Link to={Links.TG} className='linkButton' target='_blank'>
-                <Button>Консультация</Button>
+                <Button className='bg-orangeMain'>Консультация</Button>
             </Link>
-            <Button>Заказать сайт</Button>
+            <Button className='bg-orangeMain'>Заказать сайт</Button>
         </div>
     );
 };

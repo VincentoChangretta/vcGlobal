@@ -37,14 +37,13 @@ export const HelperForm = () => {
                                 name='number'
                                 type='number'
                                 placeholder='Номер телефона'
-                                boxClassName='mx-auto mb-[50px] rounded-[80px]'
+                                boxClassName='mx-auto mb-[50px] rounded-[60px]'
                                 inpClassName='text-xl'
                             >
                                 <Button
                                     inputButton={true}
-                                    className='mx-auto'
+                                    className='mx-auto bg-orangeMain text-mainBgInv'
                                     type='submit'
-                                    black={true}
                                 >
                                     Отправить
                                 </Button>

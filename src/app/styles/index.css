@@ -10,7 +10,7 @@
     }
 
     .app {
-        @apply min-h-[100svh] flex flex-col text-lg font-Montserrat;
+        @apply min-h-[100svh] relative flex flex-col text-lg font-Montserrat;
     }
 
     .container {
