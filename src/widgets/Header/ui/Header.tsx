@@ -36,7 +36,7 @@ export const Header = () => {
                                 return (
                                     <li key={item.path}>
                                         <a
-                                            href={`${item.path}${item.path.replace('/', '')}`}
+                                            href={`${item.path.replace('/', '')}`}
                                         >
                                             {item.name}
                                         </a>

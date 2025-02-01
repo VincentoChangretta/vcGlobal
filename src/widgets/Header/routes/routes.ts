@@ -1,8 +1,8 @@
 export enum NavRoutes {
     MAIN = '/',
     PRICES = '/prices',
-    FEEDBACKS = '/feedbacks',
-    CONTACTS = '/contacts',
+    FEEDBACKS = '/#feedbacks',
+    CONTACTS = '/#contacts',
     LESSONS = '/lessons',
     LESSONS_LEARN = '/lessons#learn',
     LESSONS_PROGRAMM = '/lessons#programm',

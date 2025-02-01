@@ -29,7 +29,7 @@ export const ListSliderContent = ({ activeEl, animation }) => {
                 </h4>
                 <p className='mb-[20px]'>{activeEl.text}</p>
                 <Link to={activeEl.link}>
-                    <Button className='bg-orangeMain text-mainBgInv'>
+                    <Button>
                         Подробнее
                     </Button>
                 </Link>

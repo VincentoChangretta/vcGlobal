@@ -42,7 +42,8 @@ export const HelperForm = () => {
                             >
                                 <Button
                                     inputButton={true}
-                                    className='mx-auto bg-orangeMain text-mainBgInv'
+                                    black={true}
+                                    className='mx-auto'
                                     type='submit'
                                 >
                                     Отправить
