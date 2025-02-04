@@ -3,6 +3,7 @@ import { ServicePriceTypes } from 'shared/data/data';
 import { ModalService } from './ModalContent/ModalService';
 import { LessonsForm } from 'pages/LessonsPage/ui/sections/Form/LessonsForm';
 import { modalDataVariations } from 'shared/constants/constants';
+import { ModalOrder } from './ModalContent/ModalOrder';
 
 export interface allModalDataTypes {
     type: string;
@@ -38,12 +39,14 @@ export const Modal: FC<modalProps> = ({
             return <ModalService modalData={modalData} />;
         } else if (modalData.type === modalDataVariations.LESSONS_FORM.type) {
             return <LessonsForm />;
+        } else if (modalData.type === modalDataVariations.ORDER.type) {
+            return <ModalOrder />;
         }
     };
 
     if (!isOpen) return null;
     return (
-        <div className='fixed inset-0 z-50 flex justify-center items-center backdrop-blur-[20px]'>
+        <div className='fixed inset-0 z-[9999] flex justify-center items-center backdrop-blur-[20px]'>
             <div
                 ref={modalRef}
                 className='relative p-[30px] pr-[80px] rounded-stdRadius w-full max-w-[720px] bg-mainBgInv text-mainBg'

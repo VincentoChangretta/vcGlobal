@@ -3,6 +3,7 @@ import { faTelegram, faVk, faWhatsapp } from "@fortawesome/free-brands-svg-icons
 export const modalDataVariations = {
     SERVICE: { type: 'service' },
     LESSONS_FORM: { type: 'lessons_form' },
+    ORDER: {type: "order"}
 } as const;
 
 

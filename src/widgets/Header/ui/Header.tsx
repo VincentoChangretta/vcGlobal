@@ -2,15 +2,26 @@ import { Logo } from 'widgets/Logo';
 import './Header.css';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from 'shared/ui/Button';
-import { ThemeButton } from 'shared/ui/ThemeButton';
 import {
     HeaderDevsRoutes,
     HeaderLessonsRoutes,
     NavRoutes,
 } from '../routes/routes';
+import { ModalContext, useModal } from 'app/provider/ModalProvider';
+import { useContext } from 'react';
+import { modalDataVariations } from 'shared/constants/constants';
 
 export const Header = () => {
     const location = useLocation();
+
+    const { openModal } = useModal();
+    const { setModalData } = useContext(ModalContext);
+
+    const setModal = () => {
+        setModalData(modalDataVariations.ORDER);
+        openModal();
+    };
+
     const currentNav =
         location.pathname === NavRoutes.LESSONS
             ? HeaderLessonsRoutes
@@ -31,7 +42,7 @@ export const Header = () => {
                         className='grow basis-0'
                     />
                     <ul className='flex gap-[30px]'>
-                        {currentNav.map((item, index) => {
+                        {currentNav.map((item) => {
                             if (item.path.includes('#')) {
                                 return (
                                     <li key={item.path}>
@@ -51,7 +62,7 @@ export const Header = () => {
                         })}
                     </ul>
                     <div className='flex items-center justify-end gap-[20px] grow basis-0'>
-                        <Button>Заказать</Button>
+                        <Button onClick={() => setModal()}>Заказать</Button>
                         {/* <ThemeButton /> */}
                     </div>
                 </div>
