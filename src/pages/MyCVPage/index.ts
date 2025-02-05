@@ -1,3 +1,3 @@
-import { MyCVPageAsync as MyCVPage } from './ui/MyCVPage.async';
+import MyCVPage from "./ui/MyCVPage";
 
 export { MyCVPage };

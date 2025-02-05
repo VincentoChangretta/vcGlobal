@@ -23,7 +23,7 @@ export const Input: FC<InputProps> = ({
 
     return (
         <div
-            className={`flex gap-[30px] max-w-[550px] p-[15px] pl-[30px] rounded-stdRadius bg-mainBgInvC text-mainBg ${boxClassName ? boxClassName : ''}`}
+            className={`flex gap-[30px] p-[15px] pl-[30px] rounded-stdRadius bg-mainBgInvC text-mainBg ${boxClassName && boxClassName}`}
         >
             <input
                 className={`w-full ${inpClassName ? inpClassName : ''}`}

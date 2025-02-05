@@ -1,3 +1,3 @@
-import { LessonsPageAsync } from './ui/LessonsPageAsync';
+import LessonsPage from './ui/LessonsPage';
 
-export { LessonsPageAsync as LessonsPage };
+export { LessonsPage };

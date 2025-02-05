@@ -3,11 +3,12 @@ import { useLocation } from 'react-router-dom';
 
 export const useScrollToId = () => {
     const { hash } = useLocation();
+
     useEffect(() => {
         if (hash) {
-            const element = document.getElementById(hash.replace('#', ''));
+            const element = document.querySelector(hash);
             if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+                element.scrollIntoView();
             }
         }
     }, [hash]);

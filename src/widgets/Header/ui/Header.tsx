@@ -7,21 +7,8 @@ import {
     HeaderLessonsRoutes,
     NavRoutes,
 } from '../routes/routes';
-import { ModalContext, useModal } from 'app/provider/ModalProvider';
-import { useContext } from 'react';
-import { modalDataVariations } from 'shared/constants/constants';
-
 export const Header = () => {
     const location = useLocation();
-
-    const { openModal } = useModal();
-    const { setModalData } = useContext(ModalContext);
-
-    const setModal = () => {
-        setModalData(modalDataVariations.ORDER);
-        openModal();
-    };
-
     const currentNav =
         location.pathname === NavRoutes.LESSONS
             ? HeaderLessonsRoutes
@@ -62,7 +49,12 @@ export const Header = () => {
                         })}
                     </ul>
                     <div className='flex items-center justify-end gap-[20px] grow basis-0'>
-                        <Button onClick={() => setModal()}>Заказать</Button>
+                        <Link
+                            className='button bg-mainBgInv text-mainBg'
+                            to={NavRoutes.PRICES}
+                        >
+                            Заказать
+                        </Link>
                         {/* <ThemeButton /> */}
                     </div>
                 </div>

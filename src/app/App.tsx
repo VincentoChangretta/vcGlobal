@@ -7,7 +7,6 @@ import { AppRouter } from './router/ui/AppRouter';
 import { Footer } from 'widgets/Footer/Footer';
 import { Modal, ModalContext, useModal } from './provider/ModalProvider';
 import { useContext, useState } from 'react';
-import AnimatedCursor from 'features/AnimatedCursor/AnimatedCursor';
 
 function App() {
     const { theme } = useTheme();
@@ -29,7 +28,6 @@ function App() {
                     )}
                 </main>
                 <Footer />
-                {/* <AnimatedCursor /> */}
             </div>
         </>
     );

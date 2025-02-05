@@ -37,7 +37,7 @@ export const HelperForm = () => {
                                 name='number'
                                 type='number'
                                 placeholder='Номер телефона'
-                                boxClassName='mx-auto mb-[50px] rounded-[60px]'
+                                boxClassName='mx-auto mb-[50px] !rounded-[60px] max-w-[550px]'
                                 inpClassName='text-xl'
                             >
                                 <Button

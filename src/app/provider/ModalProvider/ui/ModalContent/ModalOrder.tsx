@@ -12,13 +12,13 @@ export const ModalOrder = () => {
                     name='name'
                     type='text'
                     placeholder='Ваше имя'
-                    boxClassName='max-w-[410px]'
+                    boxClassName='!max-w-[410px]'
                 />
                 <Input
                     name='name'
                     type='text'
                     placeholder='Контакт'
-                    boxClassName='max-w-[410px]'
+                    boxClassName='!max-w-[410px]'
                 />
                 <Button black={true}>Заказать</Button>
             </div>

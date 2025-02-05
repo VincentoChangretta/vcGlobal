@@ -12,6 +12,8 @@ import { LessonsContact } from 'pages/LessonsPage/ui/sections/LessonsContacts';
 const MainDevsPage = () => {
     useScrollToTop();
 
+   
+
     return (
         <>
             <MainDevsTop />
@@ -22,7 +24,7 @@ const MainDevsPage = () => {
             <MainDevsAboutWork />
             <MainDevsTools />
             <MainDevsFeedbacks />
-            <LessonsContact/>
+            <LessonsContact />
         </>
     );
 };
