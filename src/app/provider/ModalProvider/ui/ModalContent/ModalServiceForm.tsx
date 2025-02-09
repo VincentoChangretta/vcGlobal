@@ -1,24 +1,36 @@
+import { useState } from 'react';
+import { inputNames, placeholders } from 'shared/constants/constants';
 import { Button } from 'shared/ui/Button';
-import { Input } from 'shared/ui/Input';
+import {
+  ContactChoiseTypes,
+  ContactChoiseVariations,
+} from 'shared/ui/Input/config/config';
+import { Input } from 'shared/ui/Input/ui/Input';
 
 export const ModalServiceForm = () => {
-    return (
-        <form>
-            <div className='flex gap-[10px] items-start mb-[10px]'>
-                <Input
-                    name='name'
-                    type='text'
-                    placeholder='Ваше имя'
-                    boxClassName='max-w-[400px]'
-                />
-                <Input
-                    name='contact-with-me'
-                    type='text'
-                    placeholder='Контакт'
-                    boxClassName='max-w-[400px]'
-                />
-            </div>
-            <Button black={true}>Заказать</Button>
-        </form>
-    );
+  const [contactMethod, setContactMethod] = useState<ContactChoiseTypes>(
+    ContactChoiseVariations.TELEGRAM,
+  );
+
+  return (
+    <form>
+      <div className='flex gap-[10px] items-start mb-[10px]'>
+        <Input
+          name={inputNames.NAME}
+          type='text'
+          placeholder={placeholders.NAME}
+          boxClassName='max-w-[400px]'
+        />
+        <Input
+          withChoise={true}
+          name={`${inputNames.CONTACT_WITH}-${contactMethod.name}`}
+          type={contactMethod.inputType}
+          placeholder={contactMethod.placeholder}
+          setContactMethod={setContactMethod}
+          boxClassName='max-w-[400px]'
+        />
+      </div>
+      <Button black={true}>Заказать</Button>
+    </form>
+  );
 };

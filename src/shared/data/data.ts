@@ -1,3 +1,10 @@
+import {
+    faCss3,
+    faGithub,
+    faHtml5,
+    faJs,
+    IconDefinition,
+} from '@fortawesome/free-brands-svg-icons';
 import { modalDataVariations } from 'shared/constants/constants';
 import { appImg, crystallImg, gameImg } from 'shared/images';
 
@@ -301,6 +308,69 @@ export const feedbacks: feedbacksTypes[] = [
         feedback:
             'Работа с этой командой была настоящим удовольствием! Они уделили много времени и внимания каждому аспекту нашего проекта, и результаты говорят сами за себя. Приложение получилось не только красивым, но и очень функциональным. Я с удовольствием буду рекомендовать их другим!',
         rating: 5,
+    },
+];
+
+interface Technology {
+    name: string;
+    icon: IconDefinition;
+}
+
+interface Lesson {
+    id: string;
+    lessonsQuantity: number;
+    name: string;
+    priceR: string;
+    priceUSD: string;
+    technology: Technology[];
+    skills: string[];
+    development: string[];
+}
+
+export const lessonsPricesData: Lesson[] = [
+    {
+        id: 'GroupLessons',
+        lessonsQuantity: 20,
+        name: 'Групповых занятий',
+        priceR: '22500₽',
+        priceUSD: '240$',
+        technology: [
+            { name: 'HTML', icon: faHtml5 },
+            { name: 'CSS', icon: faCss3 },
+            { name: 'JavaScript', icon: faJs },
+            { name: 'GIT', icon: faGithub },
+        ],
+        skills: [
+            'Загрузим проекты на Git',
+            'Научимся загружать проекты на хостинг',
+        ],
+        development: [
+            'Три одностраничных сайта',
+            'Приложение - «Прогноз погоды»',
+            'Многостраничный сайт с функционалом',
+        ],
+    },
+    {
+        id: 'IndividualLessons',
+        lessonsQuantity: 20,
+        name: 'Индивидуальных занятий',
+        priceR: '30000₽',
+        priceUSD: '310$',
+        technology: [
+            { name: 'HTML', icon: faHtml5 },
+            { name: 'CSS', icon: faCss3 },
+            { name: 'JavaScript', icon: faJs },
+            { name: 'GIT', icon: faGithub },
+        ],
+        skills: [
+            'Загрузим проекты на Git',
+            'Научимся загружать проекты на хостинг',
+        ],
+        development: [
+            'Три одностраничных сайта',
+            'Приложение - «Прогноз погоды»',
+            'Многостраничный сайт с функционалом',
+        ],
     },
 ];
 

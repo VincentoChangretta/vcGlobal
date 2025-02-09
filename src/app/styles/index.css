@@ -26,7 +26,7 @@
     }
 
     .button {
-        @apply max-w-[250px] flex justify-center items-center w-full p-btnPadding rounded-stdRadius text-center;
+        @apply max-w-[250px] flex justify-center items-center w-full p-btnPadding rounded-stdRadius text-center text-lg;
     }
 
     .linkButton {
