@@ -1,16 +1,19 @@
-import { FC, useState } from 'react';
+import { FC,  useRef, useState } from 'react';
 import { ContactChoiseTypes, ContactChoiseVariations } from '../config/config';
+import { useCloseModal } from 'shared/hooks/useCloseModal';
 
 interface ContactChoiseProps {
   setContactMethod: (prev: ContactChoiseTypes) => void;
 }
 
 export const ContactChoise: FC<ContactChoiseProps> = (props) => {
+  const ContactChoiseRef = useRef<HTMLDivElement>(null);
   const { setContactMethod } = props;
   const [activeItem, setActiveItem] = useState<string>(
     ContactChoiseVariations.TELEGRAM.name,
   );
   const [activeList, setActiveList] = useState<boolean>(false);
+  useCloseModal({ ref: ContactChoiseRef, stateChanger: setActiveList });
 
   const openModal = () => {
     setActiveList((prev) => !prev);
@@ -21,8 +24,12 @@ export const ContactChoise: FC<ContactChoiseProps> = (props) => {
     setActiveList(false);
     setContactMethod(item);
   };
+
   return (
-    <div className='absolute max-w-[130px] w-full top-2/4 left-3 -translate-y-2/4 text-base cursor-pointer'>
+    <div
+      ref={ContactChoiseRef}
+      className='absolute max-w-[130px] w-full top-2/4 left-3 -translate-y-2/4 text-base cursor-pointer'
+    >
       <div
         className={`bg-mainBg text-mainBgInv py-[10px] px-[20px] text-center ${!activeList ? 'rounded-[20px]' : 'rounded-t-[20px]'}`}
         onClick={openModal}
@@ -37,7 +44,7 @@ export const ContactChoise: FC<ContactChoiseProps> = (props) => {
             return (
               <li
                 key={value.name}
-                className='bg-mainBg py-2 px-4 rounded-[10px]'
+                className='bg-mainBg py-2 px-4 rounded-[10px] transition-colors hover:bg-mainBgInv hover:text-mainBg'
                 onClick={() => handleSetActiveItem(value)}
               >
                 {value.name}

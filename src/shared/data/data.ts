@@ -374,6 +374,16 @@ export const lessonsPricesData: Lesson[] = [
     },
 ];
 
+export enum CourseVariations {
+    INIDIVIDUAL = 'Индивидуальный',
+    COLLECTIVE = 'Коллективный',
+  }
+  
+
+export const lessonsTypes = [
+    CourseVariations.INIDIVIDUAL, CourseVariations.COLLECTIVE
+]
+
 export const privacyPolicyData = [
     'Настоящий документ «Политика конфиденциальности» (далее по тексту – «Политика») представляет собой правила использования владельцем сайта в лице Папикяна Арама Арсеновича (далее – «мы» и/или «Администрация») данных интернет-пользователей (далее «вы» и/или «Пользователь»), собираемых с использованием сайта https://vcdevs.com (далее – «Сайт«).',
     '1. Обрабатываемые данные',

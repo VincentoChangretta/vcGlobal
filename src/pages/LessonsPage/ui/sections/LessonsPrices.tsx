@@ -9,7 +9,8 @@ export const LessonsPrices = () => {
   const { openModal } = useModal();
   const { setModalData } = useContext(ModalContext);
 
-  const setModal = () => {
+  const setModal = (e: React.MouseEvent) => {
+    e.stopPropagation();
     setModalData(modalDataVariations.LESSONS_FORM);
     openModal();
   };
