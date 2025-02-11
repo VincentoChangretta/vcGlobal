@@ -19,6 +19,7 @@ export enum placeholders {
 export enum inputNames {
   NAME = 'Имя -',
   CONTACT_WITH = 'Связь -',
+  LESSONS_VARIATION = "Занятия -"
 }
 
 export const contactsIcons = [

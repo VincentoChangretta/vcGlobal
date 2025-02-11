@@ -55,7 +55,7 @@ export const Modal: FC<modalProps> = ({
         // onClick={(e) => e.stopPropagation()}
       >
         <button className='closeButton' onClick={onClose}>
-          <FontAwesomeIcon icon={faX}/>
+          <FontAwesomeIcon icon={faX} />
         </button>
         {children}
         <div>{setModalContent(modalData)}</div>

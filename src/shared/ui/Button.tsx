@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   inputButton?: boolean;
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const { children, className, black, inputButton, ...otherProps } = props;
 
   return (
@@ -22,5 +22,3 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   );
 });
 
-// Экспортируем компонент
-export default Button;

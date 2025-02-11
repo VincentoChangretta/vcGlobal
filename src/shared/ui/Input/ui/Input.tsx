@@ -1,8 +1,8 @@
-import { FC, ReactNode } from 'react';
+import { FC, InputHTMLAttributes, ReactNode } from 'react';
 import { ContactChoise } from './ContactChoise';
 import { ContactChoiseTypes } from '../config/config';
 
-interface InputProps {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   children?: ReactNode;
   type: string;
   name: string;
@@ -23,6 +23,7 @@ export const Input: FC<InputProps> = (props) => {
     name,
     withChoise,
     setContactMethod,
+    ...otherProps
   } = props;
 
   if (withChoise) {
@@ -36,6 +37,7 @@ export const Input: FC<InputProps> = (props) => {
           name={name}
           type={type}
           placeholder={placeholder}
+          {...otherProps}
           required
         />
       </div>
@@ -51,6 +53,7 @@ export const Input: FC<InputProps> = (props) => {
         name={name}
         type={type}
         placeholder={placeholder}
+        {...otherProps}
         required
       />
       {children}

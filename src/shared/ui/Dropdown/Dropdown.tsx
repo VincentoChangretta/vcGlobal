@@ -1,14 +1,15 @@
-import { act, FC, useRef, useState } from 'react';
+import { FC, useRef, useState } from 'react';
 import { useCloseModal } from 'shared/hooks/useCloseModal';
 
 interface DropdownProps {
   activeValue: string | number;
   listData: string[] | number[];
   boxClassname?: string;
+  toDoFunction?: (prev: string | number) => void;
 }
 
 export const Dropdown: FC<DropdownProps> = (props) => {
-  const { listData, activeValue, boxClassname } = props;
+  const { listData, activeValue, boxClassname, toDoFunction } = props;
   const DropdownRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState<boolean>();
   const [activeItem, setActiveItem] = useState<string | number>(activeValue);
@@ -17,12 +18,13 @@ export const Dropdown: FC<DropdownProps> = (props) => {
   const handleSetActiveItem = (item: string | number) => {
     setActiveItem(item);
     setActive(false);
+    toDoFunction ? toDoFunction(item) : null;
   };
 
   return (
     <div
       ref={DropdownRef}
-      className={`relative z-[9997] w-full cursor-pointer ${boxClassname}`}
+      className={`relative z-[500] w-full cursor-pointer ${boxClassname}`}
     >
       <div
         className={`bg-mainBg text-mainBgInv py-[15px] px-[30px] ${!active ? 'rounded-stdRadius' : 'rounded-t-stdRadius'}`}

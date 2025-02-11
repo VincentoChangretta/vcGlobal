@@ -16,6 +16,7 @@ module.exports = {
         cssColor: '#4264EB',
         jsColor: '#F2BF26',
         gitColor: '#0e0e0e',
+        gitSecondColor: '#9457EB',
         orangeMain: '#F09A28',
       },
       margin: {

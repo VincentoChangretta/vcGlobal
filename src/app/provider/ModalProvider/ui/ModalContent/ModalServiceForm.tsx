@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { inputNames, placeholders } from 'shared/constants/constants';
-import Button from 'shared/ui/Button';
+import { Button } from 'shared/ui/Button';
 import {
   ContactChoiseTypes,
   ContactChoiseVariations,

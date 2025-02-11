@@ -12,17 +12,6 @@ export const LessonsPageWWD = () => {
                     </h4>
                 </div>
                 <div className='flex flex-col gap-[70px]'>
-                    {/* <div className='relative'>
-                        <div className='relative z-20 w-[100%] bg-mainBg max-h-[530px] rounded-stdRadius overflow-hidden'>
-                            <img
-                                className='img animate-whatWeDo rounded-[25px]'
-                                src={WhatWeDoImg}
-                                alt='Фото проекта'
-                            />
-                        </div>
-                        <div className='bluredBall z-10 w-[200px] h-[200px] top-0 left-[-50px] bg-bluredBall'></div>
-                        <div className='bluredBall z-10 w-[200px] h-[200px] bottom-0 right-[-50px] bg-bluredBall'></div>
-                    </div> */}
                     <ul className='flex flex-wrap justify-start gap-[30px] mb-[80px]'>
                         {whatWeDoData.map((item, index) => (
                             <li key={index} className='max-w-[48%] w-full'>
