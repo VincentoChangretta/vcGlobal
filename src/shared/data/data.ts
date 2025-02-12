@@ -10,7 +10,7 @@ import { appImg, crystallImg, gameImg } from 'shared/images';
 
 export const MainTextSliderData: string[] = [
     'Философия',
-    'Современность',
+    'Будущее',
     'Практичность',
     'Надежность',
 ];

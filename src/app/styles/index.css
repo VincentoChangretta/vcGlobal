@@ -10,11 +10,19 @@
     }
 
     .app {
-        @apply min-h-[100svh] relative flex flex-col text-lg font-Montserrat;
+        @apply min-h-[100svh] relative flex flex-col text-lg font-Montserrat w-450:text-base;
     }
 
     .container {
         @apply max-w-[1620px] mx-auto px-[10px];
+    }
+
+    .burger-nav {
+        @apply w-750:fixed w-750:z-[9999] w-750:top-0 w-750:right-0 w-750:bottom-0 w-750:w-[320px] w-750:flex w-750:flex-col w-750:justify-center w-750:items-center w-750:bg-mainBgLight w-750:text-mainBgInv w-750:translate-x-full
+    }
+
+    .noScroll {
+        @apply overflow-hidden
     }
 
     .lessons-container {
@@ -46,7 +54,7 @@
     }
 
     .title {
-        @apply text-title font-extrabold leading-title text-center mb-[50px];
+        @apply text-title font-extrabold leading-title text-center mb-[50px] w-550:text-4xl w-450:text-2xl w-450:mb-[20px];
     }
 
     .smallTitle {
