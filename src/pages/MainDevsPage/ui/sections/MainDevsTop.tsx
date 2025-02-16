@@ -6,7 +6,7 @@ export const MainDevsTop = () => {
   return (
     <section className='mb-section'>
       <div className='relative container'>
-        <div className='flex items-center justify-between gap-[40px] w-1140:flex-col w-1140:justify-center w-750:justify-start w-750:items-start'>
+        <div className='flex items-center justify-between gap-[40px] w-1140:flex-col w-1140:justify-center w-750:justify-start w-750:items-center'>
           <div className='flex max-w-[600px] w-full flex-col items-start justify-center minusHeaderHeight w-1140:justify-start w-1140:min-h-fit w-1140:items-center'>
             <h1 className='relative max-w-[600px] w-full flex text-8xl font-extrabold pb-[110px] mb-[30px] w-1350:text-7xl w-1140:text-center w-820:text-6xl w-820:pb-[80px] w-820:mb-[15px] w-530:text-5xl w-530:pb-[70px] w-420:text-[36px] w-420:pb-[60px]'>
               <div className='w-full w-1140:text-center'>Мы</div>

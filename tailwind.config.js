@@ -19,9 +19,6 @@ module.exports = {
         gitSecondColor: '#9457EB',
         orangeMain: '#F09A28',
       },
-      margin: {
-        section: '100px',
-      },
       padding: {
         btnPadding: '15px',
       },
@@ -37,7 +34,6 @@ module.exports = {
         title: '45px',
         bigTitle: '55px',
         sliderNums: '35px',
-        big: '24px',
       },
       lineHeight: {
         bigTitle: '63px',
@@ -60,12 +56,16 @@ module.exports = {
         mirror: '-1 1',
       },
       screens: {
+        'w-1500': { max: '1500px' },
         'w-1450': { max: '1450px' },
         'w-1350': { max: '1350px' },
         'w-1380': { max: '1380px' },
         'w-1200': { max: '1200px' },
+        'w-1160': { max: '1160px' },
         'w-1140': { max: '1140px' },
+        'w-1040': { max: '1040px' },
         'w-1100': { max: '1100px' },
+        'w-980': { max: '980px' },
         'w-820': { max: '820px' },
         'w-750': { max: '750px' },
         'w-550': { max: '550px' },

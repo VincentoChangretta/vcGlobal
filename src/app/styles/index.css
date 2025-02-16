@@ -50,7 +50,7 @@
     }
 
     .bigTitle {
-        @apply text-bigTitle font-extrabold leading-bigTitle mb-[50px];
+        @apply text-bigTitle font-extrabold leading-bigTitle mb-[50px] w-750:text-4xl w-750:mb-[30px] w-420:text-3xl;
     }
 
     .title {
@@ -127,6 +127,14 @@
 
     .dotLine {
         @apply content-[""] absolute top-[22px] left-[-32px] w-[2px] bg-mainBgInv;
+    }
+
+    .mb-section {
+        @apply mb-[100px] w-1100:mb-[50px]
+    }
+
+    .text-big {
+        @apply text-[24px] font-bold w-750:text-[20px]
     }
 
 }

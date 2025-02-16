@@ -10,23 +10,20 @@ import { useScrollToTop } from 'shared/lib/ScrollToTop/useScrollToTop';
 import { LessonsContact } from 'pages/LessonsPage/ui/sections/LessonsContacts';
 
 const MainDevsPage = () => {
-    useScrollToTop();
+  useScrollToTop();
 
-   
-
-    return (
-        <>
-            <MainDevsTop />
-            <MainDevsServices />
-            <MainDevsAdvantages />
-            <HelperForm />
-            <MainDevsTeam />
-            <MainDevsAboutWork />
-            <MainDevsTools />
-            <MainDevsFeedbacks />
-            <LessonsContact />
-        </>
-    );
+  return (
+    <>
+      <MainDevsTop />
+      <MainDevsServices />
+      <MainDevsAdvantages />
+      <HelperForm />
+      <MainDevsTeam />
+      <MainDevsTools />
+      <MainDevsFeedbacks />
+      <LessonsContact />
+    </>
+  );
 };
 
 export default MainDevsPage;
