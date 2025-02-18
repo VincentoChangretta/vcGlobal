@@ -18,7 +18,7 @@ export const LessonsPrices = () => {
   return (
     <section className='mb-section'>
       <div className='lessons-container'>
-        <div className='flex justify-center gap-[50px]'>
+        <div className='flex justify-center gap-[50px] w-1200:flex-col w-1200:max-w-[550px] w-1200:mx-auto'>
           {lessonsPricesData.map((service) => (
             <article
               key={service.id}

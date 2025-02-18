@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ModalContext, useModal } from 'app/provider/ModalProvider';
 import { useContext } from 'react';
 import { modalDataVariations } from 'shared/constants/constants';
-import {Button} from 'shared/ui/Button';
+import { Button } from 'shared/ui/Button';
 
 export const LessonsPageTop = () => {
   const { openModal } = useModal();
@@ -22,11 +22,11 @@ export const LessonsPageTop = () => {
   return (
     <section className='relative  minusHeaderHeight'>
       <div className='container'>
-        <div className='minusHeaderHeight flex items-center justify-between'>
+        <div className='minusHeaderHeight flex items-center justify-between w-1550:pt-[150px] w-1550:flex-col w-1550:min-h-[95svh] w-1550:mb-[400px] w-1200:min-h-[90svh] w-1200:pt-[100px] w-1200:mb-[400px]'>
           <div>
-            <div className='mb-[30px]'>
+            <div className='mb-[30px] w-1550:text-center'>
               <div className='relative z-10 mb-[30px]'>
-                <h1 className='text-[60px] font-extrabold text-mainBgInv leading-[85px]'>
+                <h1 className='text-[60px] font-extrabold text-mainBgInv leading-[85px] w-1200:text-[40px] w-1200:leading-[60px]'>
                   <span>
                     Твой путь к веб-успеху <br /> начинается с
                   </span>
@@ -42,9 +42,11 @@ export const LessonsPageTop = () => {
                 себя безграничные возможности веб-технологий!
               </h3>
             </div>
-            <Button onClick={() => setModal()}>Записаться</Button>
+            <Button className='w-1550:mx-auto' onClick={() => setModal()}>
+              Записаться
+            </Button>
           </div>
-          <div className='relative max-w-[35%] h-[50px] w-full flex flex-col justify-center text-[230px]'>
+          <div className='relative shrink-0 w-[560px] h-[50px] flex flex-col justify-center text-[230px] w-1550:ml-[60px]'>
             <div
               className={
                 'absolute top-[-280px] right-[230px] -rotate-3 techIconBox items-center htmlIcon animate-bounceOne text-[250px]'

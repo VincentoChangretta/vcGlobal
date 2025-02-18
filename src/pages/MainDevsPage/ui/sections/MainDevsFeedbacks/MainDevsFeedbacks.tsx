@@ -7,7 +7,9 @@ export const MainDevsFeedbacks = () => {
         <h2 className='bigTitle text-center'>Отзывы</h2>
         <div className='mx-auto max-w-[80%] mb-[50px] w-1450:max-w-full'>
           <div className='mb-[40px] text-center'>
-            <h3 className='text-title mb-[20px]'>Никитин Матвей Алексеевич</h3>
+            <h3 className='text-title mb-[20px] w-750:max-w-[500px] w-750:leading-10 w-750:mx-auto'>
+              Никитин Матвей Алексеевич
+            </h3>
             <h4 className='text-big mb-[20px]'>
               Блогер-просветитель <br />
               Автор тгк

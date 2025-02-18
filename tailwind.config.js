@@ -56,6 +56,7 @@ module.exports = {
         mirror: '-1 1',
       },
       screens: {
+        'w-1550': { max: '1550px' },
         'w-1500': { max: '1500px' },
         'w-1450': { max: '1450px' },
         'w-1350': { max: '1350px' },
