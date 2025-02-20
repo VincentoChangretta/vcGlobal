@@ -25,13 +25,13 @@ export const LessonsPrices = () => {
               className='bg-mainBgInv text-mainBg p-[30px] rounded-stdRadius'
             >
               <div>
-                <h2 className='max-w-[300px] text-5xl font-extrabold mb-[30px]'>
+                <h2 className='max-w-[300px] text-5xl font-extrabold mb-[30px] w-750:text-4xl'>
                   <div>{service.lessonsQuantity}</div>
                   {service.name}
                 </h2>
                 <div className='mb-[30px]'>
                   <h3 className='smallTitle mb-[10px]'>Изучим:</h3>
-                  <ul className='flex items-center gap-[10px]'>
+                  <ul className='flex items-center gap-[10px] w-750:flex-wrap'>
                     {service.technology.map((tech, index) => (
                       <li
                         key={index}
@@ -48,15 +48,21 @@ export const LessonsPrices = () => {
                 </div>
                 <div className='mb-[30px]'>
                   <h3 className='smallTitle mb-[10px]'>Разработаем:</h3>
-                  <ul>
+                  <ul className='flex flex-col gap-[10px]'>
                     {service.development.map((dev, index) => (
-                      <li key={dev.slice(0, 5) + index} className='text-xl'>
-                        — {dev}
+                      <li
+                        key={dev.slice(0, 5) + index}
+                        className='w-660:text-base'
+                      >
+                        {dev}
                       </li>
                     ))}
                     {service.skills.map((skill, index) => (
-                      <li key={skill.slice(0, 5) + index} className='text-xl'>
-                        — {skill}
+                      <li
+                        key={skill.slice(0, 5) + index}
+                        className='w-660:text-base'
+                      >
+                        {skill}
                       </li>
                     ))}
                   </ul>

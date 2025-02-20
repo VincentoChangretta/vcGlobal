@@ -58,7 +58,7 @@
     }
 
     .smallTitle {
-        @apply text-l font-extrabold
+        @apply text-l font-extrabold leading-[35px]
     }
 
     .minusHeaderHeight {
@@ -136,7 +136,10 @@
     .text-big {
         @apply text-[24px] font-bold w-750:text-[20px]
     }
+}
 
+.wwd-container {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
 }
 
 @keyframes animWhatWeDo {
