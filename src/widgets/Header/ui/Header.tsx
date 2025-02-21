@@ -27,26 +27,32 @@ export const Header = () => {
     document.body.classList.toggle('noScroll');
   };
 
+  const closeBurger = () => {
+    setBurger(false);
+    document.body.classList.remove('noScroll');
+  };
+
   return (
     <header className='w-1140:mb-[50px]'>
       <div className='container'>
         <div className='relative inner min-h-[100px]'>
           <Logo pathname={location.pathname} className='grow basis-0' />
           <div
-            className={`fixed inset-0 z-[9998] backdrop-blur transition-all  ${burger ? 'opacity-1 visible' : 'opacity-0 invisible'} `}
+            onClick={() => closeBurger()}
+            className={`fixed inset-0 z-[9998] backdrop-blur transition-all  ${burger ? 'opacity-1 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none'} `}
           ></div>
           <nav className={`burger-nav ${burger && 'translate-x-0'}`}>
             <ul className='flex gap-[30px] w-750:flex-col'>
               {currentNav.map((item) => {
                 if (item.path.includes('#')) {
                   return (
-                    <li key={item.path}>
+                    <li key={item.path} onClick={() => closeBurger()}>
                       <a href={`${item.path.replace('/', '')}`}>{item.name}</a>
                     </li>
                   );
                 }
                 return (
-                  <li key={item.path}>
+                  <li key={item.path} onClick={() => closeBurger()}>
                     <Link to={item.path}>{item.name}</Link>
                   </li>
                 );

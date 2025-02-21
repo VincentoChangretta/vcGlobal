@@ -20,7 +20,7 @@ export const Logo: FC<LogoProps> = (props) => {
     return (
         <Link
             to='/'
-            className={`${className ? className : ''} text-3xl font-extrabold`}
+            className={`${className ? className : ''} text-4xl font-extrabold`}
             {...otherProps}
         >
             {logoValue.logo}

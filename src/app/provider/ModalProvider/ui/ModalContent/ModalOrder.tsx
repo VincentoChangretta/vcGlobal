@@ -16,7 +16,7 @@ export const ModalOrder = () => {
       <h3 className='text-3xl font-extrabold max-w-[400px] mb-[20px]'>
         Оставьте заявку на разработку сайта
       </h3>
-      <div className='flex flex-col gap-[10px]'>
+      <div className='flex flex-col gap-[10px] '>
         <Input
           name={inputNames.NAME}
           type='text'

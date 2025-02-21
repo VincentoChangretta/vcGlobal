@@ -78,7 +78,7 @@
     }
 
     .closeButton {
-        @apply absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-full bg-mainBg text-mainBgInv font-extrabold
+        @apply absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-full bg-mainBg text-mainBgInv font-extrabold w-550:top-[10px] w-550:right-[10px] w-550:w-[30px] w-550:h-[30px] w-550:text-base
     }
 
     .techIconBox {

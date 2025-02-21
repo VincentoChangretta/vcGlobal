@@ -14,12 +14,12 @@ export const ModalServiceForm = () => {
 
   return (
     <form>
-      <div className='flex gap-[10px] items-start mb-[10px]'>
+      <div className='flex gap-[10px] items-start mb-[10px] w-1000:flex-col'>
         <Input
           name={inputNames.NAME}
           type='text'
           placeholder={placeholders.NAME}
-          boxClassName='max-w-[400px]'
+          boxClassName='max-w-[400px] w-1000:w-full'
         />
         <Input
           withChoise={true}

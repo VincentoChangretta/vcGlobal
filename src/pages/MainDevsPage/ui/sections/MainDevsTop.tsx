@@ -20,13 +20,13 @@ export const MainDevsTop = () => {
               Твой партнер и творец цифровых миров!
             </h3>
           </div>
-          <div className='absolute top-[-20px] right-0 max-w-[750px] w-1450:max-w-[580px] w-1450:top-2/4 w-1450:-translate-y-2/4 w-1140:static w-1140:translate-y-0'>
+          <div className='absolute top-[-20px] right-0 max-w-[750px] w-1450:max-w-[580px] w-1450:top-2/4 w-1450:-translate-y-2/4 w-1140:static w-1140:translate-y-0 w-680:w-[90%]'>
             <img
               className='relative z-[1000] animate-animSmallMove '
               src={philosopher}
               alt='main img'
             />
-            <span className='lightBall top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[350px] h-[350px] bg-orangeMain animate-pulse w-550:w-[300px] w-550:h-[300px]'></span>
+            <span className='lightBall top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[350px] h-[350px] bg-orangeMain animate-pulse w-680:w-[50%] w-680:h-[50%] w-680:blur-[80px]'></span>
           </div>
         </div>
       </div>
