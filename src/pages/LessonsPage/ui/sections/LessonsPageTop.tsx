@@ -20,7 +20,7 @@ export const LessonsPageTop = () => {
   };
 
   return (
-    <section className='relative minusHeaderHeight'>
+    <section className='relative minusHeaderHeight overflow-x-hidden'>
       <div className='container'>
         <div className='minusHeaderHeight flex items-center justify-between w-1550:pt-[150px] w-1550:flex-col w-1550:gap-[150px] w-1550:mb-[150px] w-1200:pt-[50px] w-1000:justify-start w-1000:gap-[150px] w-1000:mb-[100px] w-450:mb-[50px]'>
           <div>

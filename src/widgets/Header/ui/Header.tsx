@@ -1,7 +1,5 @@
 import { Logo } from 'widgets/Logo';
-import './Header.css';
 import { Link, useLocation } from 'react-router-dom';
-import { Button } from 'shared/ui/Button';
 import {
   HeaderDevsRoutes,
   HeaderLessonsRoutes,
@@ -17,10 +15,6 @@ export const Header = () => {
     location.pathname === NavRoutes.LESSONS
       ? HeaderLessonsRoutes
       : HeaderDevsRoutes;
-  const btnValue = {
-    name:
-      location.pathname === NavRoutes.LESSONS ? 'Записаться' : 'Заказать сайт',
-  };
 
   const openBurger = () => {
     setBurger((prev) => !prev);
@@ -42,7 +36,7 @@ export const Header = () => {
             className={`fixed inset-0 z-[9998] backdrop-blur transition-all  ${burger ? 'opacity-1 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none'} `}
           ></div>
           <nav className={`burger-nav ${burger && 'translate-x-0'}`}>
-            <ul className='flex gap-[30px] w-750:flex-col'>
+            <ul className='flex gap-[30px] w-850:flex-col'>
               {currentNav.map((item) => {
                 if (item.path.includes('#')) {
                   return (
@@ -60,7 +54,7 @@ export const Header = () => {
             </ul>
           </nav>
           <FontAwesomeIcon
-            className='hidden text-4xl cursor-pointer w-750:inline-block w-750:absolute w-750:z-[9999] w-750:right-0 w-750:top-2/4 w-750:-translate-y-2/4'
+            className='hidden text-4xl cursor-pointer w-850:inline-block w-850:absolute w-850:z-[9999] w-850:right-0 w-850:top-2/4 w-850:-translate-y-2/4'
             icon={!burger ? faBars : faX}
             onClick={openBurger}
           />

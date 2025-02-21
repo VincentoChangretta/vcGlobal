@@ -4,7 +4,7 @@ import { TextSlider } from 'shared/ui/TextSlider';
 
 export const MainDevsTop = () => {
   return (
-    <section className='mb-section'>
+    <section className='mb-section overflow-hidden'>
       <div className='relative container'>
         <div className='flex items-center justify-between gap-[40px] w-1140:flex-col w-1140:justify-center w-750:justify-start w-750:items-center'>
           <div className='flex max-w-[600px] w-full flex-col items-start justify-center minusHeaderHeight w-1140:justify-start w-1140:min-h-fit w-1140:items-center'>

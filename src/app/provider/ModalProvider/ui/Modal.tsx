@@ -51,7 +51,7 @@ export const Modal: FC<modalProps> = ({
     <div className='fixed inset-0 z-[9999] flex justify-center items-center backdrop-blur-[20px]'>
       <div
         ref={modalRef}
-        className='relative p-[30px] pr-[80px] rounded-stdRadius w-full max-w-[720px] bg-mainBgInv text-mainBg w-550:p-[15px] w-550:pr-[70px]'
+        className='relative p-[30px] pr-[80px] rounded-stdRadius w-full max-w-[720px] bg-mainBgInv text-mainBg w-550:p-[15px] w-550:pr-[50px]'
         // onClick={(e) => e.stopPropagation()}
       >
         <button className='closeButton' onClick={onClose}>

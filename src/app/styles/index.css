@@ -18,7 +18,7 @@
     }
 
     .burger-nav {
-        @apply w-750:fixed w-750:z-[9999] w-750:top-0 w-750:right-0 w-750:bottom-0 w-750:w-[320px] w-750:flex w-750:flex-col w-750:justify-center w-750:items-center w-750:bg-mainBgLight w-750:text-mainBgInv w-750:translate-x-full
+        @apply w-850:fixed w-850:z-[9999] w-850:top-0 w-850:right-0 w-850:bottom-0 w-850:w-[320px] w-850:flex w-850:flex-col w-850:justify-center w-850:items-center w-850:bg-mainBgLight w-850:text-mainBgInv w-850:translate-x-full
     }
 
     .noScroll {

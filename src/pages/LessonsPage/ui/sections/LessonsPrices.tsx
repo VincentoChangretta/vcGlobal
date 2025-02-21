@@ -25,7 +25,7 @@ export const LessonsPrices = () => {
               className='bg-mainBgInv text-mainBg p-[30px] rounded-stdRadius'
             >
               <div>
-                <h2 className='max-w-[300px] text-5xl font-extrabold mb-[30px] w-750:text-4xl'>
+                <h2 className='max-w-[300px] text-5xl font-extrabold mb-[30px] w-750:text-4xl w-550:text-2xl'>
                   <div>{service.lessonsQuantity}</div>
                   {service.name}
                 </h2>

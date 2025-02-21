@@ -2,22 +2,20 @@ const mailto = './mail.php';
 
 interface FetchToMailArgs {
     e: React.FormEvent<HTMLFormElement>;
-    formRef: HTMLFormElement | null; // Обновлено для учета null
+    formRef: HTMLFormElement | null;
 }
 
 interface HandleSubmitArgs {
     e: React.FormEvent<HTMLFormElement>;
-    formRef: HTMLFormElement | null; // Обновлено для учета null
+    formRef: HTMLFormElement | null;
     setSubmitBtn: (value: boolean) => void;
     setFetchModal?: (value: string) => void;
 }
 
 export const fetchToMail = async ({ e, formRef }: FetchToMailArgs) => {
     e.preventDefault();
-    if (!formRef) return false; // Проверка на null
+    if (!formRef) return false;
     const formData = new FormData(formRef);
-    console.log([...formData]);
-
     try {
         const response = await fetch(mailto, {
             method: 'POST',
@@ -41,7 +39,7 @@ export const handleSubmit = async ({
     setSubmitBtn,
     setFetchModal,
 }: HandleSubmitArgs) => {
-    const formData = await fetchToMail({ e, formRef }); // Используем await
+    const formData = await fetchToMail({ e, formRef });
     if (formData) {
         setSubmitBtn(true);
         // setFetchModal("success");
